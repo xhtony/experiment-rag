@@ -1,0 +1,129 @@
+{
+  "$defs": {
+    "Action": {
+      "enum": [
+        "ANSWER",
+        "CLARIFY",
+        "REFUSE"
+      ],
+      "title": "Action",
+      "type": "string"
+    },
+    "QuestionType": {
+      "enum": [
+        "single_doc",
+        "multi_doc",
+        "conditional",
+        "ambiguous",
+        "unanswerable"
+      ],
+      "title": "QuestionType",
+      "type": "string"
+    }
+  },
+  "additionalProperties": false,
+  "properties": {
+    "id": {
+      "exclusiveMinimum": 0,
+      "title": "Id",
+      "type": "integer"
+    },
+    "question": {
+      "minLength": 1,
+      "title": "Question",
+      "type": "string"
+    },
+    "qtype": {
+      "$ref": "#/$defs/QuestionType"
+    },
+    "is_answerable": {
+      "title": "Is Answerable",
+      "type": "boolean"
+    },
+    "expected_action": {
+      "$ref": "#/$defs/Action"
+    },
+    "acceptable_actions": {
+      "items": {
+        "$ref": "#/$defs/Action"
+      },
+      "title": "Acceptable Actions",
+      "type": "array"
+    },
+    "gold_answer": {
+      "default": "",
+      "title": "Gold Answer",
+      "type": "string"
+    },
+    "gold_chunk_ids": {
+      "items": {
+        "type": "string"
+      },
+      "title": "Gold Chunk Ids",
+      "type": "array"
+    },
+    "background_chunk_ids": {
+      "description": "Reference-only evidence for contextual facts; never a target retrieval gold label.",
+      "items": {
+        "type": "string"
+      },
+      "title": "Background Chunk Ids",
+      "type": "array"
+    },
+    "gold_evidence_groups": {
+      "items": {
+        "items": {
+          "type": "string"
+        },
+        "type": "array"
+      },
+      "title": "Gold Evidence Groups",
+      "type": "array"
+    },
+    "required_facts": {
+      "items": {
+        "type": "string"
+      },
+      "title": "Required Facts",
+      "type": "array"
+    },
+    "missing_slots": {
+      "items": {
+        "type": "string"
+      },
+      "title": "Missing Slots",
+      "type": "array"
+    },
+    "acceptable_clarifications": {
+      "items": {
+        "type": "string"
+      },
+      "title": "Acceptable Clarifications",
+      "type": "array"
+    },
+    "family_id": {
+      "default": "",
+      "title": "Family Id",
+      "type": "string"
+    },
+    "annotation_notes": {
+      "default": "",
+      "title": "Annotation Notes",
+      "type": "string"
+    },
+    "gold_reviewed": {
+      "default": false,
+      "title": "Gold Reviewed",
+      "type": "boolean"
+    }
+  },
+  "required": [
+    "id",
+    "question",
+    "qtype",
+    "is_answerable",
+    "expected_action"
+  ],
+  "title": "QuestionRecord",
+  "type": "object"
+}

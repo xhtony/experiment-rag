@@ -1,0 +1,12 @@
+[project]
+name = "ragapp"
+version = "0.1.0"
+description = "Experimental system for comparing RAG strategies on university course and policy QA"
+requires-python = ">=3.10"
+
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools.packages.find]
+where = ["src"]

@@ -1,0 +1,7 @@
+,faithfulness,faithfulness,faithfulness,faithfulness,citation_precision,citation_precision,citation_precision,citation_precision,citation_recall,citation_recall,citation_recall,citation_recall,citation_f1,citation_f1,citation_f1,citation_f1,citation_support,citation_support,citation_support,citation_support,hallucinated,hallucinated,hallucinated,hallucinated,retrieval_recall,retrieval_recall,retrieval_recall,retrieval_recall,latency_ms,latency_ms,latency_ms,latency_ms
+,mean,median,std,count,mean,median,std,count,mean,median,std,count,mean,median,std,count,mean,median,std,count,mean,median,std,count,mean,median,std,count,mean,median,std,count
+condition,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+C0,0.2133,0.125,0.256,179,,,,0,,,,0,,,,0,,,,0,0.9609,1.0,0.1944,179,,,,0,1424.46,1319.5,537.2097,200
+C1,0.9363,1.0,0.1603,171,0.6084,1.0,0.4498,171,0.8583,1.0,0.3022,127,0.8269,1.0,0.3004,127,0.8804,1.0,0.2548,171,0.1228,0.0,0.3292,171,0.8397,1.0,0.3304,131,1832.205,1703.5,649.3907,200
+C2,0.9662,1.0,0.1056,175,0.647,1.0,0.4267,175,0.9644,1.0,0.1258,131,0.8932,1.0,0.1789,131,0.8657,1.0,0.2555,175,0.0457,0.0,0.2095,175,0.9746,1.0,0.1084,131,3299.88,3233.5,635.3041,200
+C3,0.9644,1.0,0.1212,122,0.8101,1.0,0.3451,122,0.9348,1.0,0.2033,110,0.9039,1.0,0.2048,110,0.9041,1.0,0.2211,122,0.0738,0.0,0.2625,122,0.8919,1.0,0.2556,131,3713.115,3401.5,1080.3212,200

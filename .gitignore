@@ -1,0 +1,12 @@
+.venv/
+venv/
+__pycache__/
+*.pyc
+.env
+.env.*
+!.env.example
+!.env.phase2.example
+.pytest_cache/
+results/phase2/
+tmp/phase2/
+Research Proposal.docx

@@ -1,0 +1,28 @@
+# Core LLM / RAG stack
+langchain>=0.3
+langchain-openai>=0.2
+langchain-qdrant>=0.2
+langchain-community>=0.3
+langgraph>=0.2
+openai>=1.50
+qdrant-client>=1.12
+
+# Data / config
+pydantic>=2.8
+pydantic-settings>=2.4
+python-dotenv>=1.0
+python-frontmatter>=1.1
+pypdf>=5.0
+
+# Retrieval
+rank-bm25>=0.2.2
+
+# Storage
+sqlalchemy>=2.0
+psycopg2-binary>=2.9
+
+# Analysis
+numpy>=1.26
+pandas>=2.2
+scipy>=1.13
+pingouin>=0.5.4

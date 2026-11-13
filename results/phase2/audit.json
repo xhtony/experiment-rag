@@ -1,0 +1,427 @@
+{
+  "run": {
+    "run_id": 7,
+    "name": "phase2-test-1",
+    "status": "completed",
+    "split": "test",
+    "questions": 75,
+    "conditions": [
+      "C0",
+      "C1",
+      "C2",
+      "C3",
+      "C4"
+    ],
+    "expected": 375,
+    "successful": 375,
+    "technical_errors": 0,
+    "not_attempted": 0,
+    "automatically_scored": 375,
+    "evaluation_records": 375,
+    "evaluation_partial": 0,
+    "evaluation_failed": 0,
+    "evaluation_pending": 0,
+    "evaluation_legacy_or_invalid": 0,
+    "evaluation_not_started": 0,
+    "evaluation_error_attempts": 13,
+    "evaluation_error_types": [
+      "EvaluationCheckError"
+    ],
+    "error_types": [
+      "ValidationError"
+    ]
+  },
+  "complete": true,
+  "interpretation": "held-out within-domain evaluation",
+  "frozen_manifest": {
+    "protocol_version": "phase2-v3",
+    "evaluation_protocol": "phase2-evaluation-v3",
+    "runtime": {
+      "settings": {
+        "llm_model": "gpt-5.4-mini",
+        "llm_temperature": 0.0,
+        "judge_model": "gpt-5.4",
+        "embedding_model": "text-embedding-3-small",
+        "qdrant_collection": "university_policy_corpus",
+        "chunk_size": 800,
+        "chunk_overlap": 120,
+        "top_k": 5,
+        "candidate_k": 20,
+        "rrf_k": 60,
+        "c3_max_retries": 1,
+        "max_context_chars": 12000,
+        "phase2_seed": 42,
+        "phase2_max_attempts": 2,
+        "llm_timeout": 120.0,
+        "llm_max_retries": 2,
+        "llm_reasoning_effort": null,
+        "judge_reasoning_effort": null
+      },
+      "effective_generator": {
+        "model": "gpt-5.4-mini",
+        "timeout": 120.0,
+        "max_retries": 2,
+        "reasoning_effort": "none",
+        "temperature": 0.0
+      },
+      "effective_judge": {
+        "model": "gpt-5.4",
+        "timeout": 120.0,
+        "max_retries": 2,
+        "reasoning_effort": "none",
+        "temperature": 0.0
+      },
+      "code": {
+        "sha256": "07e85e53ba94d3e2d8cad7faad474a300bc84af306e0240b51f65c1e6b88a1c2",
+        "files": {
+          "src/ragapp/__init__.py": "41362a5ea4931c546433d4c48290c5707bf02dbbea1c3aafa9f43d1225e47003",
+          "src/ragapp/analysis/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "src/ragapp/analysis/stats.py": "b503092860956456145d5933b1cb22622879b2027ef56591b584aaf706bb8f05",
+          "src/ragapp/config.py": "3a487a4ce0f407da104a50a5f7401aeb188671f3123ea817e9366b1191b69092",
+          "src/ragapp/evaluation/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "src/ragapp/evaluation/evaluator.py": "76956ec39c754c2002b7f0431c2d2dc0987c88dafa0d17cc703005f4b3590076",
+          "src/ragapp/evaluation/judges.py": "9cdbdc04c6ffa07cea347bd882c163d877d5428d1c4b20c50f1b0c8624cb8229",
+          "src/ragapp/experiment/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "src/ragapp/experiment/runner.py": "1a0c437f0b8db277a7122a6fb218562ac915367842a39b1dbb4e49771e3c7de4",
+          "src/ragapp/phase2/__init__.py": "1f74d6700123e4188cd6d3d3bd394a985f6ca821b318681adfd56fc7f1deb904",
+          "src/ragapp/phase2/analysis.py": "10944f2890b1c5a2819503c9a5457f6a1c6962f9c9aaec00d92f0069b770f392",
+          "src/ragapp/phase2/contracts.py": "20d25c3aa916a192e17d5366de1649e875d472542d08791863d7a39844111e71",
+          "src/ragapp/phase2/datasets.py": "4030c95ca0453bdd62eb71acf5e0f61e4abb29d1082df738073f85c10c324bf9",
+          "src/ragapp/phase2/environment.py": "e1cd49ff730d4a1dd6580513ec929f6a3cbf8e22835e5eb44899f4b6b3ad47b2",
+          "src/ragapp/phase2/evaluation.py": "785e3cde7b102aab8824bf930dc82635e848efe1169fbe98d64d27f350b2231c",
+          "src/ragapp/phase2/evaluation_state.py": "2447cda5074fe968aa71479110783d2e10eaae528ff279bf1ae624fb58a82aa2",
+          "src/ragapp/phase2/llm.py": "4faf002a0e9ebd334b1dfb263073942f44c3ccd129131b51a53bf59d2bea0ba7",
+          "src/ragapp/phase2/manual.py": "3fda7157c103610758647fc86658537a6b206e1afc1a0301590b7d6db54cf181",
+          "src/ragapp/phase2/models.py": "129fb6b54b5e72eaca798543a48c8b5d2d92f85762a54e138bf3e214438ac47d",
+          "src/ragapp/phase2/pipelines.py": "480e17926d606cd7624b9a6915e969134018efd396fac32da01af3ee56dc54e0",
+          "src/ragapp/phase2/prompts.py": "7aa292c1f2c5be0739b9e18ec0007695aff5806ce4d5985025357ce93bf7a0a0",
+          "src/ragapp/phase2/provenance.py": "2e268174518b978986966db3ce864c2052db5f6159377611e0bf9addb0d674a9",
+          "src/ragapp/phase2/runner.py": "7c1b1f5a1d8892c6aba1a1a522049a48ec5e8bd19ce688b537d6968b003cd1c8",
+          "src/ragapp/phase2/workflow.py": "6af7e4362e6e1226fa492b3517471f9d8ebb40272aeac44cdd5e4166f70af141",
+          "src/ragapp/pipelines/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "src/ragapp/pipelines/c0_no_rag.py": "cb7d10b4815b0247a6c7531c0fbb8d8755ad6056ab14d1507dce91fca3784b7d",
+          "src/ragapp/pipelines/c1_vector_rag.py": "5be8388e9c6b9ab9760ba6b6c3ea9465cb7284f156ca9eb94caaf1228719feab",
+          "src/ragapp/pipelines/c2_hybrid_rerank.py": "edb46c6d7b730d328aedd2cdd614e9863f5fed5ae0bbc9a83dcde2252ce03298",
+          "src/ragapp/pipelines/c3_corrective_refusal.py": "4e3a7e7dcac515cca31c75fbc0fea8ff0180acd2df5bf04ab939a48411751a4c",
+          "src/ragapp/pipelines/nodes.py": "7aec6fcbe7efa44d6b1c520eef0929cce378644440b13435430934e80441fa0f",
+          "src/ragapp/pipelines/registry.py": "573943b1b4b7fc25621a897d66a9c1ba11d43525dd2c519e18a179637d72e5cf",
+          "src/ragapp/pipelines/state.py": "aad2e7f0e24b0358e7ef8fa28d13def137aa0f23fec47ad6a328c1bafee380aa",
+          "src/ragapp/schemas.py": "92317936425a1ddb3776693b095cd996a062769daa577cd1b880b1b1d9f74c76",
+          "src/ragapp/shared/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "src/ragapp/shared/bm25.py": "2b8c1562629a01b5a3919777dd219d58cd5d96c39b79a4663993ae14c4da03a5",
+          "src/ragapp/shared/corpus.py": "94beebbcdc1366e35188332c4e3ced5e7a0072e1afcbea9ffaf37f4472046f2e",
+          "src/ragapp/shared/llm.py": "89a8066590b302e8a8e3b6c78636cc8d389543b4c7618cb8ba49f3c3cbea5345",
+          "src/ragapp/shared/prompts.py": "3a69266d404822bef3be2326e9eb9ff408c3e97cc0bab3b6d240fec0f53cf694",
+          "src/ragapp/shared/vectorstore.py": "bff9b29d44e65b5b5767c5425d714c545aff9d5d8bf216d30c9255c275dbfe2b",
+          "src/ragapp/storage/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "src/ragapp/storage/db.py": "88715f7fb2eb55f557b55402c831d608f9c954b495e100eb11fa031cba78c210",
+          "src/ragapp/storage/models.py": "a78e7f8e58c97aafa18f813e1d00a1e3a653c192cf8ea57ee3c13b1ca60edc7f",
+          "scripts/phase2.py": "f09ea9b632cc1e69dc0e0cfa7f2874a54a040908bd6ed071da5f8ef47b939ccd",
+          "requirements.txt": "4f248d59590c01852ccca991b9a6f1f4d20aedbffc76f1b96457f6f742ae72b1",
+          "pyproject.toml": "26d7869f928615a5cc9727cc54723f3171cffa8d28c56af4abed0311c954f28e"
+        }
+      },
+      "packages": {
+        "ragapp": "0.1.0",
+        "langchain": "1.3.13",
+        "langchain-core": "1.4.9",
+        "langchain-openai": "1.3.5",
+        "langchain-qdrant": "1.1.0",
+        "langgraph": "1.2.9",
+        "openai": "2.45.0",
+        "qdrant-client": "1.18.0",
+        "pydantic": "2.13.4",
+        "sqlalchemy": "2.0.51",
+        "psycopg2-binary": "2.9.12",
+        "rank-bm25": "0.2.2",
+        "numpy": "2.5.1",
+        "pandas": "3.0.3",
+        "scipy": "1.18.0",
+        "python-dotenv": "1.2.2",
+        "langchain-text-splitters": "1.1.2"
+      },
+      "python": "3.13.13",
+      "git_commit": "94f46ccfc7b47c4645b537f0e42ebeb006c3da22",
+      "endpoint_fingerprint": "4a731c4c23d7c814cd0486f71cfe54e206c61c90b65b06a1443d768dd08fcfa8"
+    },
+    "dataset_digest": "a0297fd8d54af7339bd8294a42b4c6aec9d549c30fe72f1cfb0bd3e9e9e13130",
+    "corpus_digest": "382ab6f7c5f00b774d84da790ceb261a87f83dfe69cc5d4444b8de2ea7112287",
+    "reference_chunks_digest": "8fd2af18807b82ecbc592cede7673336d0a82adc2fefa661299318e5165b18c5",
+    "split": "test",
+    "conditions": [
+      "C0",
+      "C1",
+      "C2",
+      "C3",
+      "C4"
+    ],
+    "seed": 42,
+    "analysis_plan": {
+      "version": "phase2-analysis-v3",
+      "unit": "paired question",
+      "contrasts": [
+        {
+          "family": "RQ1",
+          "metric": "reference_groundedness",
+          "condition_a": "C1",
+          "condition_b": "C0",
+          "subset": "all",
+          "role": "primary",
+          "binary": false
+        },
+        {
+          "family": "RQ1",
+          "metric": "reference_groundedness",
+          "condition_a": "C2",
+          "condition_b": "C0",
+          "subset": "all",
+          "role": "primary",
+          "binary": false
+        },
+        {
+          "family": "RQ1",
+          "metric": "reference_groundedness",
+          "condition_a": "C3",
+          "condition_b": "C0",
+          "subset": "all",
+          "role": "primary",
+          "binary": false
+        },
+        {
+          "family": "RQ1",
+          "metric": "citation_precision",
+          "condition_a": "C2",
+          "condition_b": "C1",
+          "subset": "all",
+          "role": "primary",
+          "binary": false
+        },
+        {
+          "family": "RQ1",
+          "metric": "citation_completeness",
+          "condition_a": "C2",
+          "condition_b": "C1",
+          "subset": "all",
+          "role": "primary",
+          "binary": false
+        },
+        {
+          "family": "RQ1",
+          "metric": "hallucination_rate",
+          "condition_a": "C3",
+          "condition_b": "C1",
+          "subset": "all",
+          "role": "primary",
+          "binary": false
+        },
+        {
+          "family": "RQ1",
+          "metric": "appropriate_refusal",
+          "condition_a": "C3",
+          "condition_b": "C1",
+          "subset": "unanswerable",
+          "role": "primary",
+          "binary": true
+        },
+        {
+          "family": "RQ1",
+          "metric": "appropriate_clarification",
+          "condition_a": "C3",
+          "condition_b": "C1",
+          "subset": "ambiguous",
+          "role": "primary",
+          "binary": true
+        },
+        {
+          "family": "RQ3",
+          "metric": "retrieval_recall",
+          "condition_a": "C4",
+          "condition_b": "C3",
+          "subset": "all",
+          "role": "primary",
+          "binary": false
+        },
+        {
+          "family": "RQ3",
+          "metric": "citation_completeness",
+          "condition_a": "C4",
+          "condition_b": "C3",
+          "subset": "all",
+          "role": "primary",
+          "binary": false
+        },
+        {
+          "family": "RQ3",
+          "metric": "false_refusal",
+          "condition_a": "C4",
+          "condition_b": "C3",
+          "subset": "answerable_multi_conditional",
+          "role": "primary",
+          "binary": true
+        },
+        {
+          "family": "RQ3",
+          "metric": "inappropriate_answer",
+          "condition_a": "C4",
+          "condition_b": "C2",
+          "subset": "unanswerable",
+          "role": "primary",
+          "binary": true
+        },
+        {
+          "family": "RQ3",
+          "metric": "inappropriate_answer",
+          "condition_a": "C4",
+          "condition_b": "C2",
+          "subset": "ambiguous",
+          "role": "primary",
+          "binary": true
+        },
+        {
+          "family": "RQ3",
+          "metric": "reference_groundedness",
+          "condition_a": "C4",
+          "condition_b": "C2",
+          "subset": "all",
+          "role": "primary",
+          "binary": false
+        },
+        {
+          "family": "RQ3",
+          "metric": "hallucination_rate",
+          "condition_a": "C4",
+          "condition_b": "C2",
+          "subset": "all",
+          "role": "primary",
+          "binary": false
+        },
+        {
+          "family": "RQ3",
+          "metric": "citation_precision",
+          "condition_a": "C4",
+          "condition_b": "C2",
+          "subset": "all",
+          "role": "primary",
+          "binary": false
+        },
+        {
+          "family": "RQ3",
+          "metric": "answerable_coverage",
+          "condition_a": "C4",
+          "condition_b": "C2",
+          "subset": "all",
+          "role": "primary",
+          "binary": true
+        },
+        {
+          "family": "RQ3_operational",
+          "metric": "latency_ms",
+          "condition_a": "C4",
+          "condition_b": "C2",
+          "subset": "all",
+          "role": "secondary",
+          "binary": false
+        },
+        {
+          "family": "RQ3_operational",
+          "metric": "total_tokens",
+          "condition_a": "C4",
+          "condition_b": "C2",
+          "subset": "all",
+          "role": "secondary",
+          "binary": false
+        },
+        {
+          "family": "RQ3_operational",
+          "metric": "llm_calls",
+          "condition_a": "C4",
+          "condition_b": "C2",
+          "subset": "all",
+          "role": "secondary",
+          "binary": false
+        },
+        {
+          "family": "RQ3",
+          "metric": "reference_groundedness",
+          "condition_a": "C4",
+          "condition_b": "C3",
+          "subset": "all",
+          "role": "primary",
+          "binary": false
+        },
+        {
+          "family": "RQ3",
+          "metric": "hallucination_rate",
+          "condition_a": "C4",
+          "condition_b": "C3",
+          "subset": "all",
+          "role": "primary",
+          "binary": false
+        },
+        {
+          "family": "RQ3",
+          "metric": "citation_precision",
+          "condition_a": "C4",
+          "condition_b": "C3",
+          "subset": "all",
+          "role": "primary",
+          "binary": false
+        },
+        {
+          "family": "RQ3",
+          "metric": "answerable_coverage",
+          "condition_a": "C4",
+          "condition_b": "C3",
+          "subset": "all",
+          "role": "primary",
+          "binary": true
+        },
+        {
+          "family": "RQ3_operational",
+          "metric": "latency_ms",
+          "condition_a": "C4",
+          "condition_b": "C3",
+          "subset": "all",
+          "role": "secondary",
+          "binary": false
+        },
+        {
+          "family": "RQ3_operational",
+          "metric": "total_tokens",
+          "condition_a": "C4",
+          "condition_b": "C3",
+          "subset": "all",
+          "role": "secondary",
+          "binary": false
+        },
+        {
+          "family": "RQ3_operational",
+          "metric": "llm_calls",
+          "condition_a": "C4",
+          "condition_b": "C3",
+          "subset": "all",
+          "role": "secondary",
+          "binary": false
+        }
+      ],
+      "supplemental_manual_metric": "required_fact_coverage: fully met required facts / required facts; descriptive by rater, not an automated hypothesis endpoint",
+      "alternatives": "two-sided",
+      "alpha": 0.05,
+      "correction": "Holm within each full prespecified family",
+      "confidence_level": 0.95,
+      "bootstrap_samples": 2000,
+      "continuous_test": "Wilcoxon signed-rank, Pratt zeros; symmetry assumption applies to difference distribution",
+      "binary_test": "exact McNemar using discordant paired observations",
+      "effect": "mean paired difference a-b; binary difference is risk difference",
+      "missingness": "pairwise observed applicable metrics; distinguish failed/blocked evaluation, pending, generation failure and genuine N/A; quality is conditional",
+      "RQ2": "descriptive per-rater matched scores: Spearman, MAE, bias, raw agreement and Cohen kappa; no independent-row correlation p-values"
+    },
+    "unit": "question",
+    "quality_missingness": "pairwise joint applicability",
+    "schedule_digest": "d72f9b2d5b57ca01ffd11512d979435c1b3e5370b8951cf9c637d0184ff20b28"
+  },
+  "input_data_digest": "fe71bf74c5bf01fcdbff814506ae7c6522f6504de64d294f21d594d5e0d96e9e",
+  "independent_human_rows": 375,
+  "evaluation_protocol": "phase2-evaluation-v3",
+  "caution": "Quality is conditional on joint applicability and available evaluations. Evaluation failures are not zero scores or N/A; missingness may be selective."
+}

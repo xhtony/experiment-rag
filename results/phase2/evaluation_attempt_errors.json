@@ -1,0 +1,1028 @@
+[
+  {
+    "answer_id": "3a32e0ce-3f26-491c-85c2-b0968e0c3df6",
+    "number": 1,
+    "status": "error",
+    "started_at": "2026-09-28T08:11:44.880347+00:00",
+    "error_type": "EvaluationCheckError",
+    "error": "Judge evidence quote does not occur in the cited passages",
+    "diagnostic": {
+      "claim_index": 0,
+      "claim": "Under the MIT cross-credit limits in the AIS policy, the normal limit is 90 credits.",
+      "evidence_quote": "Master of Information\nAdministration: 48 credits; Master of Information Technology: 90 credits\n(Level 8 only).",
+      "evidence_chunk_ids": [
+        "ais-credit-recognition-policy::0004"
+      ],
+      "allowed_chunk_ids": [
+        "ais-credit-recognition-policy::0005",
+        "ais-credit-recognition-policy::0004",
+        "nzqa-mit-qualification-structure::0003",
+        "ais-mit-entry-requirements-fees::0003",
+        "ais-credit-recognition-policy::0001"
+      ],
+      "purpose": "retrieved_context_support",
+      "verdicts": [
+        {
+          "claim_index": 0,
+          "verdict": "supported",
+          "evidence_chunk_ids": [
+            "ais-credit-recognition-policy::0004"
+          ],
+          "evidence_quotes": [
+            "Master of Information\nAdministration: 48 credits; Master of Information Technology: 90 credits\n(Level 8 only)."
+          ],
+          "rationale": "The normal cross-credit limitation for the Master of Information Technology is stated as 90 credits."
+        },
+        {
+          "claim_index": 1,
+          "verdict": "supported",
+          "evidence_chunk_ids": [
+            "ais-credit-recognition-policy::0005"
+          ],
+          "evidence_quotes": [
+            "Master of Business Administration: 75\ncredits; Master of Information Technology: 90 credits (Level 8 only)."
+          ],
+          "rationale": "The articulation-agreement exception states the MIT cross-credit limit may be increased to 90 credits."
+        },
+        {
+          "claim_index": 2,
+          "verdict": "supported",
+          "evidence_chunk_ids": [
+            "ais-credit-recognition-policy::0004",
+            "ais-credit-recognition-policy::0005"
+          ],
+          "evidence_quotes": [
+            "Master of Information Technology: 90 credits\n(Level 8 only).",
+            "Master of Information Technology: 90 credits (Level 8 only)."
+          ],
+          "rationale": "Both the normal and articulation-agreement MIT limits specify Level 8 only."
+        },
+        {
+          "claim_index": 3,
+          "verdict": "supported",
+          "evidence_chunk_ids": [
+            "nzqa-mit-qualification-structure::0003"
+          ],
+          "evidence_quotes": [
+            "The Level 8 component is followed by 90 credits of Level 9 Information\nTechnology courses, being either: (d) COMP901 Information Technology Research\nThesis (90 credits); or (e) COMP902 Advanced Information Technology\nSpecialised Project (45 credits) and COMP903 Information Technology Applied\nResearch Project (45 credits)."
+          ],
+          "rationale": "The qualification structure explicitly requires the Level 9 component to be completed as either COMP901 worth 90 credits, or COMP902 plus COMP903 worth 45 credits each."
+        }
+      ]
+    },
+    "latency_ms": 3792,
+    "judge_usage": {
+      "calls": [
+        {
+          "purpose": "retrieved_context_support",
+          "input_tokens": 1709,
+          "output_tokens": 397,
+          "total_tokens": 2106,
+          "model": "gpt-5.4-2026-03-05",
+          "system_fingerprint": null
+        }
+      ]
+    },
+    "stage": "retrieved_context_support",
+    "protocol": "phase2-evaluation-v3"
+  },
+  {
+    "answer_id": "c0377629-66c0-445a-9d0e-7d5978d32e6e",
+    "number": 1,
+    "status": "error",
+    "started_at": "2026-09-28T08:30:49.779800+00:00",
+    "error_type": "EvaluationCheckError",
+    "error": "Supported/partial/contradicted verdict requires verifiable evidence",
+    "diagnostic": {
+      "claim_index": 1,
+      "purpose": "retrieved_context_support",
+      "verdicts": [
+        {
+          "claim_index": 0,
+          "verdict": "supported",
+          "evidence_chunk_ids": [
+            "ais-academic-achievement-awards::0000"
+          ],
+          "evidence_quotes": [
+            "The GPA is calculated on all course\ngrades achieved for the current programme in the prior one to two trimesters,\ntotalling not less than 60 credits, and not previously counted for an award."
+          ],
+          "rationale": "The passage states the undergraduate award calculation uses prior one to two trimesters, at least 60 credits, and credits not previously counted for an award."
+        },
+        {
+          "claim_index": 1,
+          "verdict": "supported",
+          "evidence_chunk_ids": [],
+          "evidence_quotes": [],
+          "rationale": "The question explicitly states the user has completed only 45 bachelor-degree credits; this is an input circumstance for applying the policy."
+        },
+        {
+          "claim_index": 2,
+          "verdict": "supported",
+          "evidence_chunk_ids": [
+            "ais-academic-achievement-awards::0000"
+          ],
+          "evidence_quotes": [
+            "\"Excellence\" (GPA of 7.5 and above)."
+          ],
+          "rationale": "A GPA of 8.0 is above the stated Excellence threshold of 7.5."
+        },
+        {
+          "claim_index": 3,
+          "verdict": "supported",
+          "evidence_chunk_ids": [
+            "ais-academic-achievement-awards::0000"
+          ],
+          "evidence_quotes": [
+            "totalling not less than 60 credits"
+          ],
+          "rationale": "The criterion requires at least 60 credits, so 45 credits does not satisfy that requirement."
+        },
+        {
+          "claim_index": 4,
+          "verdict": "supported",
+          "evidence_chunk_ids": [
+            "ais-academic-achievement-awards::0000"
+          ],
+          "evidence_quotes": [
+            "\"Excellence\" (GPA of 7.5 and above)."
+          ],
+          "rationale": "The passage explicitly gives the undergraduate Excellence GPA requirement as 7.5 or above."
+        },
+        {
+          "claim_index": 5,
+          "verdict": "supported",
+          "evidence_chunk_ids": [
+            "ais-academic-achievement-awards::0000"
+          ],
+          "evidence_quotes": [
+            "The GPA is calculated on all course\ngrades achieved for the current programme in the prior one to two trimesters,\ntotalling not less than 60 credits, and not previously counted for an award."
+          ],
+          "rationale": "This exactly matches the stated undergraduate Excellence criterion about the relevant period, minimum credits, and not previously counted credits."
+        },
+        {
+          "claim_index": 6,
+          "verdict": "supported",
+          "evidence_chunk_ids": [
+            "ais-academic-achievement-awards::0000"
+          ],
+          "evidence_quotes": [
+            "totalling not less than 60 credits"
+          ],
+          "rationale": "Since 45 is less than the required minimum of 60, it does not meet the requirement."
+        }
+      ]
+    },
+    "latency_ms": 5521,
+    "judge_usage": {
+      "calls": [
+        {
+          "purpose": "retrieved_context_support",
+          "input_tokens": 1842,
+          "output_tokens": 544,
+          "total_tokens": 2386,
+          "model": "gpt-5.4-2026-03-05",
+          "system_fingerprint": null
+        }
+      ]
+    },
+    "stage": "retrieved_context_support",
+    "protocol": "phase2-evaluation-v3"
+  },
+  {
+    "answer_id": "39326a6c-7bf8-47ec-8b7b-cfbae1b6d24d",
+    "number": 1,
+    "status": "error",
+    "started_at": "2026-09-28T08:39:54.604438+00:00",
+    "error_type": "EvaluationCheckError",
+    "error": "Supported/partial/contradicted verdict requires verifiable evidence",
+    "diagnostic": {
+      "claim_index": 1,
+      "purpose": "retrieved_context_support",
+      "verdicts": [
+        {
+          "claim_index": 0,
+          "verdict": "supported",
+          "evidence_chunk_ids": [
+            "ais-credit-recognition-policy::0001"
+          ],
+          "evidence_quotes": [
+            "must be submitted within four weeks of that programme's\nofficial start date."
+          ],
+          "rationale": "The policy states the deadline is measured from the programme's official start date, so the permitted four-week window depends on that date."
+        },
+        {
+          "claim_index": 1,
+          "verdict": "supported",
+          "evidence_chunk_ids": [],
+          "evidence_quotes": [],
+          "rationale": "The question says the student joined classes late and plans to apply on 30 March 2026, but it does not state the programme's official start date."
+        },
+        {
+          "claim_index": 2,
+          "verdict": "supported",
+          "evidence_chunk_ids": [
+            "ais-credit-recognition-policy::0001"
+          ],
+          "evidence_quotes": [
+            "must be submitted within four weeks of that programme's\nofficial start date."
+          ],
+          "rationale": "This directly states that the four-week application window is counted from the programme's official start date."
+        }
+      ]
+    },
+    "latency_ms": 2804,
+    "judge_usage": {
+      "calls": [
+        {
+          "purpose": "retrieved_context_support",
+          "input_tokens": 1498,
+          "output_tokens": 218,
+          "total_tokens": 1716,
+          "model": "gpt-5.4-2026-03-05",
+          "system_fingerprint": null
+        }
+      ]
+    },
+    "stage": "retrieved_context_support",
+    "protocol": "phase2-evaluation-v3"
+  },
+  {
+    "answer_id": "930cf62e-ce77-4a61-81d8-8617048d7cf5",
+    "number": 1,
+    "status": "error",
+    "started_at": "2026-09-28T08:45:48.000505+00:00",
+    "error_type": "EvaluationCheckError",
+    "error": "Judge cited evidence outside the claim's permitted scope",
+    "diagnostic": {
+      "claim_index": 7,
+      "allowed_chunk_ids": [],
+      "purpose": "citation_completeness",
+      "verdicts": [
+        {
+          "claim_index": 0,
+          "verdict": "supported",
+          "evidence_chunk_ids": [
+            "ais-fees-payment-protection::0001"
+          ],
+          "evidence_quotes": [
+            "Students who are not up to date with payments of fees will not be entitled to\ncontinue the qualification or to graduate from it."
+          ],
+          "rationale": "The passage explicitly says students not up to date with fee payments are not entitled to continue the qualification."
+        },
+        {
+          "claim_index": 1,
+          "verdict": "supported",
+          "evidence_chunk_ids": [
+            "ais-fees-payment-protection::0001"
+          ],
+          "evidence_quotes": [
+            "Students who are not up to date with payments of fees will not be entitled to\ncontinue the qualification or to graduate from it."
+          ],
+          "rationale": "The passage explicitly says students not up to date with fee payments are not entitled to graduate from the qualification."
+        },
+        {
+          "claim_index": 2,
+          "verdict": "supported",
+          "evidence_chunk_ids": [
+            "ais-fees-payment-protection::0001"
+          ],
+          "evidence_quotes": [
+            "Students who are not up to date with payments of fees will not be entitled to\ncontinue the qualification or to graduate from it."
+          ],
+          "rationale": "This directly supports that overdue or unpaid fees affect continued study."
+        },
+        {
+          "claim_index": 3,
+          "verdict": "supported",
+          "evidence_chunk_ids": [
+            "ais-fees-payment-protection::0001"
+          ],
+          "evidence_quotes": [
+            "Students who are not up to date with payments of fees will not be entitled to\ncontinue the qualification or to graduate from it."
+          ],
+          "rationale": "This directly supports that overdue or unpaid fees affect graduation eligibility."
+        },
+        {
+          "claim_index": 4,
+          "verdict": "supported",
+          "evidence_chunk_ids": [
+            "ais-graduation-ceremony::0004"
+          ],
+          "evidence_quotes": [
+            "To formally graduate at the ceremony, a student must: have completed their\nqualification(s) within the eligibility period; have paid all outstanding fees\nand/or fines and completed a Student Clearance Form;"
+          ],
+          "rationale": "The ceremony requirements explicitly include paying all outstanding fees and/or fines."
+        },
+        {
+          "claim_index": 5,
+          "verdict": "supported",
+          "evidence_chunk_ids": [
+            "ais-graduation-ceremony::0004"
+          ],
+          "evidence_quotes": [
+            "To formally graduate at the ceremony, a student must: have completed their\nqualification(s) within the eligibility period; have paid all outstanding fees\nand/or fines and completed a Student Clearance Form;"
+          ],
+          "rationale": "The ceremony requirements explicitly include completing a Student Clearance Form."
+        },
+        {
+          "claim_index": 6,
+          "verdict": "supported",
+          "evidence_chunk_ids": [
+            "ais-graduation-ceremony::0004"
+          ],
+          "evidence_quotes": [
+            "have paid all outstanding fees\nand/or fines and completed a Student Clearance Form;"
+          ],
+          "rationale": "This shows clearing overdue amounts is one of the ceremony requirements."
+        },
+        {
+          "claim_index": 7,
+          "verdict": "supported",
+          "evidence_chunk_ids": [
+            "ais-fees-payment-protection::0001",
+            "ais-graduation-ceremony::0004"
+          ],
+          "evidence_quotes": [
+            "Students who are not up to date with payments of fees will not be entitled to\ncontinue the qualification or to graduate from it.",
+            "have paid all outstanding fees\nand/or fines and completed a Student Clearance Form;"
+          ],
+          "rationale": "One passage says unpaid fees block continuing the qualification and graduating from it; the other says all outstanding fees/fines must be paid for formal graduation at the ceremony. Together they state overdue fees affect both continued study and graduation eligibility."
+        },
+        {
+          "claim_index": 8,
+          "verdict": "supported",
+          "evidence_chunk_ids": [
+            "ais-graduation-ceremony::0004"
+          ],
+          "evidence_quotes": [
+            "To formally graduate at the ceremony, a student must: have completed their\nqualification(s) within the eligibility period; have paid all outstanding fees\nand/or fines and completed a Student Clearance Form;"
+          ],
+          "rationale": "The ceremony rule explicitly requires all outstanding fees and/or fines to be paid to formally graduate at the ceremony."
+        }
+      ]
+    },
+    "latency_ms": 7729,
+    "judge_usage": {
+      "calls": [
+        {
+          "purpose": "citation_completeness",
+          "input_tokens": 1492,
+          "output_tokens": 795,
+          "total_tokens": 2287,
+          "model": "gpt-5.4-2026-03-05",
+          "system_fingerprint": null
+        }
+      ]
+    },
+    "stage": "citation_completeness",
+    "protocol": "phase2-evaluation-v3"
+  },
+  {
+    "answer_id": "8b6671f1-d413-48ee-9465-b330f3198ea8",
+    "number": 1,
+    "status": "error",
+    "started_at": "2026-09-28T08:46:24.197698+00:00",
+    "error_type": "EvaluationCheckError",
+    "error": "Judge evidence quote does not occur in the cited passages",
+    "diagnostic": {
+      "claim_index": 0,
+      "claim": "The applicable AIS payment and graduation policy version is not specified.",
+      "evidence_quote": "Fees, Payment and Fees Protection",
+      "evidence_chunk_ids": [
+        "ais-fees-payment-protection::0001",
+        "ais-graduation-ceremony::0004"
+      ],
+      "allowed_chunk_ids": [
+        "ais-fees-payment-protection::0001",
+        "ais-graduation-ceremony::0004"
+      ],
+      "purpose": "reference_grounding",
+      "verdicts": [
+        {
+          "claim_index": 0,
+          "verdict": "supported",
+          "evidence_chunk_ids": [
+            "ais-fees-payment-protection::0001",
+            "ais-graduation-ceremony::0004"
+          ],
+          "evidence_quotes": [
+            "Fees, Payment and Fees Protection",
+            "Graduation Ceremony 2026"
+          ],
+          "rationale": "The provided passages identify document titles but do not state a policy version for the fees/payment policy, and the ceremony passage is tied to 2026 rather than giving a general combined policy version."
+        },
+        {
+          "claim_index": 1,
+          "verdict": "supported",
+          "evidence_chunk_ids": [
+            "ais-fees-payment-protection::0001",
+            "ais-graduation-ceremony::0004"
+          ],
+          "evidence_quotes": [
+            "Students who are not up to date with payments of fees will not be entitled to\ncontinue the qualification or to graduate from it.",
+            "To formally graduate at the ceremony, a student must: have completed their\nqualification(s) within the eligibility period; have paid all outstanding fees\nand/or fines and completed a Student Clearance Form; have completed and\nsubmitted an Application to Graduate form before the specified deadline; and\nhave returned their certificate to Registry if it has already been issued."
+          ],
+          "rationale": "The rules refer generally to students and qualifications, but no specific programme is identified."
+        },
+        {
+          "claim_index": 2,
+          "verdict": "supported",
+          "evidence_chunk_ids": [
+            "ais-fees-payment-protection::0001",
+            "ais-graduation-ceremony::0004"
+          ],
+          "evidence_quotes": [
+            "Students who are not up to date with payments of fees will not be entitled to\ncontinue the qualification or to graduate from it.",
+            "To formally graduate at the ceremony, a student must: have completed their\nqualification(s) within the eligibility period; have paid all outstanding fees\nand/or fines and completed a Student Clearance Form; have completed and\nsubmitted an Application to Graduate form before the specified deadline; and\nhave returned their certificate to Registry if it has already been issued."
+          ],
+          "rationale": "The passages state general rules for students but do not specify any particular student's status."
+        },
+        {
+          "claim_index": 3,
+          "verdict": "unsupported",
+          "evidence_chunk_ids": [],
+          "evidence_quotes": [],
+          "rationale": "The passages show that overdue or outstanding fees affect both continued study and graduation/ceremony clearance, but they do not say that unspecified details such as policy version, programme, or student status change whether the effect is ceremony participation, continued study, or both."
+        }
+      ]
+    },
+    "latency_ms": 5722,
+    "judge_usage": {
+      "calls": [
+        {
+          "purpose": "reference_grounding",
+          "input_tokens": 949,
+          "output_tokens": 502,
+          "total_tokens": 1451,
+          "model": "gpt-5.4-2026-03-05",
+          "system_fingerprint": null
+        }
+      ]
+    },
+    "stage": "reference_grounding",
+    "protocol": "phase2-evaluation-v3"
+  },
+  {
+    "answer_id": "fdd59f57-3ccb-445d-b40c-79b0f658ea5c",
+    "number": 1,
+    "status": "error",
+    "started_at": "2026-09-28T08:47:44.185943+00:00",
+    "error_type": "EvaluationCheckError",
+    "error": "Supported/partial/contradicted verdict requires verifiable evidence",
+    "diagnostic": {
+      "claim_index": 1,
+      "purpose": "reference_grounding",
+      "verdicts": [
+        {
+          "claim_index": 0,
+          "verdict": "supported",
+          "evidence_chunk_ids": [
+            "ais-student-visas-attendance::0002",
+            "ais-student-visas-attendance::0003"
+          ],
+          "evidence_quotes": [
+            "can assist with the My eQuals Platform, renew a current student\nvisa, and change a student visa from another provider to AIS.",
+            "The AIS Online Visa Office cannot process renewals of expired visas of any\ntype, limited purpose visas, visa variations for a change of programme upon\narrival, or a change from a visitor or work visa to a student visa."
+          ],
+          "rationale": "The passages show AIS can process some application types but not others, so eligibility depends on the visa type and circumstances of the case."
+        },
+        {
+          "claim_index": 1,
+          "verdict": "supported",
+          "evidence_chunk_ids": [],
+          "evidence_quotes": [],
+          "rationale": "The question asks generally about using the service for 'my case' but does not state the visa type or any case details needed to compare against the listed eligible and ineligible categories."
+        }
+      ]
+    },
+    "latency_ms": 3028,
+    "judge_usage": {
+      "calls": [
+        {
+          "purpose": "reference_grounding",
+          "input_tokens": 857,
+          "output_tokens": 223,
+          "total_tokens": 1080,
+          "model": "gpt-5.4-2026-03-05",
+          "system_fingerprint": null
+        }
+      ]
+    },
+    "stage": "reference_grounding",
+    "protocol": "phase2-evaluation-v3"
+  },
+  {
+    "answer_id": "2102d1fb-421f-419a-957f-13ccd020561f",
+    "number": 1,
+    "status": "error",
+    "started_at": "2026-09-28T09:03:32.151671+00:00",
+    "error_type": "EvaluationCheckError",
+    "error": "Supported/partial/contradicted verdict requires verifiable evidence",
+    "diagnostic": {
+      "claim_index": 3,
+      "purpose": "citation_completeness",
+      "verdicts": [
+        {
+          "claim_index": 0,
+          "verdict": "supported",
+          "evidence_chunk_ids": [
+            "ais-withdrawal-refund-policy::0008"
+          ],
+          "evidence_quotes": [
+            "In the case of\nunsatisfactory performance where withdrawal is initiated by the institute, a\ngrade of WD will be incurred."
+          ],
+          "rationale": "The passage explicitly states that institute-initiated withdrawal for unsatisfactory performance incurs WD."
+        },
+        {
+          "claim_index": 1,
+          "verdict": "supported",
+          "evidence_chunk_ids": [
+            "ais-withdrawal-refund-policy::0008"
+          ],
+          "evidence_quotes": [
+            "Withdrawals from courses within the programme received after the fifth week of\nthe trimester will incur a grade of 'E' (Failure to complete)."
+          ],
+          "rationale": "The passage explicitly assigns E to withdrawals received after the fifth week of the trimester."
+        },
+        {
+          "claim_index": 2,
+          "verdict": "supported",
+          "evidence_chunk_ids": [
+            "ais-withdrawal-refund-policy::0008"
+          ],
+          "evidence_quotes": [
+            "In the case of\nunsatisfactory performance where withdrawal is initiated by the institute, a\ngrade of WD will be incurred."
+          ],
+          "rationale": "This is a separate rule specifically covering institute-initiated withdrawals for unsatisfactory performance, and it assigns WD."
+        },
+        {
+          "claim_index": 3,
+          "verdict": "supported",
+          "evidence_chunk_ids": [],
+          "evidence_quotes": [],
+          "rationale": "From the provided rule, institute-initiated withdrawal for unsatisfactory performance incurs WD, while after-fifth-week withdrawals generally incur E; therefore this case is WD rather than E."
+        },
+        {
+          "claim_index": 4,
+          "verdict": "supported",
+          "evidence_chunk_ids": [],
+          "evidence_quotes": [],
+          "rationale": "The policy gives E as the general rule for withdrawals after the fifth week, but separately carves out institute-initiated withdrawals for unsatisfactory performance as WD, so E applies to the remaining after-fifth-week withdrawals not in that exception."
+        }
+      ]
+    },
+    "latency_ms": 4744,
+    "judge_usage": {
+      "calls": [
+        {
+          "purpose": "citation_completeness",
+          "input_tokens": 1457,
+          "output_tokens": 394,
+          "total_tokens": 1851,
+          "model": "gpt-5.4-2026-03-05",
+          "system_fingerprint": null
+        }
+      ]
+    },
+    "stage": "citation_completeness",
+    "protocol": "phase2-evaluation-v3"
+  },
+  {
+    "answer_id": "2102d1fb-421f-419a-957f-13ccd020561f",
+    "number": 2,
+    "status": "error",
+    "started_at": "2026-09-28T09:03:37.110061+00:00",
+    "error_type": "EvaluationCheckError",
+    "error": "Judge cited evidence outside the claim's permitted scope",
+    "diagnostic": {
+      "claim_index": 3,
+      "allowed_chunk_ids": [],
+      "purpose": "citation_completeness",
+      "verdicts": [
+        {
+          "claim_index": 0,
+          "verdict": "supported",
+          "evidence_chunk_ids": [
+            "ais-withdrawal-refund-policy::0008"
+          ],
+          "evidence_quotes": [
+            "In the case of\nunsatisfactory performance where withdrawal is initiated by the institute, a\ngrade of WD will be incurred."
+          ],
+          "rationale": "The passage explicitly states that institute-initiated withdrawal for unsatisfactory performance incurs WD."
+        },
+        {
+          "claim_index": 1,
+          "verdict": "supported",
+          "evidence_chunk_ids": [
+            "ais-withdrawal-refund-policy::0008"
+          ],
+          "evidence_quotes": [
+            "Withdrawals from courses within the programme received after the fifth week of\nthe trimester will incur a grade of 'E' (Failure to complete)."
+          ],
+          "rationale": "The passage explicitly assigns E to withdrawals received after the fifth week of the trimester."
+        },
+        {
+          "claim_index": 2,
+          "verdict": "supported",
+          "evidence_chunk_ids": [
+            "ais-withdrawal-refund-policy::0008"
+          ],
+          "evidence_quotes": [
+            "In the case of\nunsatisfactory performance where withdrawal is initiated by the institute, a\ngrade of WD will be incurred."
+          ],
+          "rationale": "The policy includes a distinct rule for institute-initiated withdrawals due to unsatisfactory performance, and that rule assigns WD."
+        },
+        {
+          "claim_index": 3,
+          "verdict": "supported",
+          "evidence_chunk_ids": [
+            "ais-withdrawal-refund-policy::0008"
+          ],
+          "evidence_quotes": [
+            "Withdrawals from courses within the programme received after the fifth week of\nthe trimester will incur a grade of 'E' (Failure to complete).",
+            "In the case of\nunsatisfactory performance where withdrawal is initiated by the institute, a\ngrade of WD will be incurred."
+          ],
+          "rationale": "The general after-fifth-week rule gives E, but the specific institute-initiated unsatisfactory-performance rule gives WD, so in that case the grade is WD rather than E."
+        },
+        {
+          "claim_index": 4,
+          "verdict": "supported",
+          "evidence_chunk_ids": [
+            "ais-withdrawal-refund-policy::0008"
+          ],
+          "evidence_quotes": [
+            "Withdrawals from courses within the programme received after the fifth week of\nthe trimester will incur a grade of 'E' (Failure to complete).",
+            "In the case of\nunsatisfactory performance where withdrawal is initiated by the institute, a\ngrade of WD will be incurred."
+          ],
+          "rationale": "The passage states E as the general rule for withdrawals after the fifth week, while separately assigning WD to institute-initiated withdrawals for unsatisfactory performance; thus E applies to after-fifth-week withdrawals outside that special case."
+        }
+      ]
+    },
+    "latency_ms": 5447,
+    "judge_usage": {
+      "calls": [
+        {
+          "purpose": "citation_completeness",
+          "input_tokens": 1955,
+          "output_tokens": 528,
+          "total_tokens": 2483,
+          "model": "gpt-5.4-2026-03-05",
+          "system_fingerprint": null
+        }
+      ]
+    },
+    "stage": "citation_completeness",
+    "protocol": "phase2-evaluation-v3"
+  },
+  {
+    "answer_id": "6b2c651b-7cb1-4aa0-969d-25d00b0a29b7",
+    "number": 1,
+    "status": "error",
+    "started_at": "2026-09-28T09:05:49.785312+00:00",
+    "error_type": "EvaluationCheckError",
+    "error": "Supported/partial/contradicted verdict requires verifiable evidence",
+    "diagnostic": {
+      "claim_index": 2,
+      "purpose": "retrieved_context_support",
+      "verdicts": [
+        {
+          "claim_index": 0,
+          "verdict": "supported",
+          "evidence_chunk_ids": [
+            "ais-withdrawal-refund-policy::0006"
+          ],
+          "evidence_quotes": [
+            "A minimum of two weeks' written notice must be given for cancellation of\ndormitory or homestay accommodation arrangements"
+          ],
+          "rationale": "The passage explicitly states the usual rule for cancelling homestay accommodation is two weeks' written notice."
+        },
+        {
+          "claim_index": 1,
+          "verdict": "supported",
+          "evidence_chunk_ids": [
+            "ais-withdrawal-refund-policy::0006"
+          ],
+          "evidence_quotes": [
+            "except where less than four\nweeks' homestay accommodation is booked, in which case a minimum of one week's\nwritten notice must be given."
+          ],
+          "rationale": "The passage explicitly provides an exception: if the homestay booking is less than four weeks, only one week's written notice is required."
+        },
+        {
+          "claim_index": 2,
+          "verdict": "supported",
+          "evidence_chunk_ids": [],
+          "evidence_quotes": [],
+          "rationale": "Three weeks is less than four weeks; this is a straightforward arithmetic comparison."
+        },
+        {
+          "claim_index": 3,
+          "verdict": "supported",
+          "evidence_chunk_ids": [
+            "ais-withdrawal-refund-policy::0006"
+          ],
+          "evidence_quotes": [
+            "A minimum of two weeks' written notice must be given for cancellation of\ndormitory or homestay accommodation arrangements, except where less than four\nweeks' homestay accommodation is booked, in which case a minimum of one week's\nwritten notice must be given."
+          ],
+          "rationale": "Because a three-week booking is less than four weeks, the stated exception applies, so the one-week written-notice requirement applies instead of the usual two-week requirement."
+        }
+      ]
+    },
+    "latency_ms": 4652,
+    "judge_usage": {
+      "calls": [
+        {
+          "purpose": "retrieved_context_support",
+          "input_tokens": 1556,
+          "output_tokens": 352,
+          "total_tokens": 1908,
+          "model": "gpt-5.4-2026-03-05",
+          "system_fingerprint": null
+        }
+      ]
+    },
+    "stage": "retrieved_context_support",
+    "protocol": "phase2-evaluation-v3"
+  },
+  {
+    "answer_id": "a2a4d827-58e2-425e-a630-23baeccfe8e5",
+    "number": 1,
+    "status": "error",
+    "started_at": "2026-09-28T09:13:09.473682+00:00",
+    "error_type": "EvaluationCheckError",
+    "error": "Judge evidence quote does not occur in the cited passages",
+    "diagnostic": {
+      "claim_index": 2,
+      "claim": "The shared course codes cannot be determined reliably from the supplied context.",
+      "evidence_quote": "There are eight courses worth 15\ncredits each, taken over three trimesters: COMP510 Fundamentals of Information\nSystems and Technology, COMP511 Information Technology Professional Skills,\nCOMP513 Fundamentals of Computer Programming, COMP514 Fundamentals of Computer\nDatabases, COMP515 Fundamentals of Computer Networking, COMP516 Fundamentals\nof Network Security, COMP517 Hardware and Software Service Management.",
+      "evidence_chunk_ids": [
+        "ais-nzditts-programme::0002",
+        "ais-bit-programme::0002"
+      ],
+      "allowed_chunk_ids": [
+        "ais-nzditts-programme::0002",
+        "ais-bit-programme::0002"
+      ],
+      "purpose": "reference_grounding",
+      "verdicts": [
+        {
+          "claim_index": 0,
+          "verdict": "supported",
+          "evidence_chunk_ids": [
+            "ais-bit-programme::0002"
+          ],
+          "evidence_quotes": [
+            "The compulsory courses of the BIT are: COMP510 Fundamentals of Information\nSystems and Technology, COMP511 Information Technology Professional Skills,"
+          ],
+          "rationale": "One provided passage explicitly contains the BIT compulsory-course list."
+        },
+        {
+          "claim_index": 1,
+          "verdict": "contradicted",
+          "evidence_chunk_ids": [
+            "ais-nzditts-programme::0002"
+          ],
+          "evidence_quotes": [
+            "There are eight courses worth 15\ncredits each, taken over three trimesters: COMP510 Fundamentals of Information\nSystems and Technology, COMP511 Information Technology Professional Skills,\nCOMP513 Fundamentals of Computer Programming, COMP514 Fundamentals of Computer\nDatabases, COMP515 Fundamentals of Computer Networking, COMP516 Fundamentals\nof Network Security, COMP517 Hardware and Software Service Provisioning, and\nCOMP518 Information Technology Systems Maintenance and Service Management."
+          ],
+          "rationale": "The supplied context does include the NZDITTS course list, so the claim that it does not is false."
+        },
+        {
+          "claim_index": 2,
+          "verdict": "contradicted",
+          "evidence_chunk_ids": [
+            "ais-nzditts-programme::0002",
+            "ais-bit-programme::0002"
+          ],
+          "evidence_quotes": [
+            "There are eight courses worth 15\ncredits each, taken over three trimesters: COMP510 Fundamentals of Information\nSystems and Technology, COMP511 Information Technology Professional Skills,\nCOMP513 Fundamentals of Computer Programming, COMP514 Fundamentals of Computer\nDatabases, COMP515 Fundamentals of Computer Networking, COMP516 Fundamentals\nof Network Security, COMP517 Hardware and Software Service Management.",
+            "The compulsory courses of the BIT are: COMP510 Fundamentals of Information\nSystems and Technology, COMP511 Information Technology Professional Skills,\nCOMP513 Fundamentals of Computer Programming, COMP514 Fundamentals of Computer\nDatabases, COMP515 Fundamentals of Networks and Security, BUSS502 Business\nEnvironment, MATH501 Essentials of Mathematics and Statistics, COMP602\nComputer System Testing, COMP609 Information System Security, COMP617\nRequirements Modelling, COMP621 Operating Systems, COMP701 Information\nTechnology Project Management, and COMP720 Information Technology Project\n(completed over two semesters)."
+          ],
+          "rationale": "Both lists are present, so shared codes can be identified reliably by comparison: COMP510, COMP511, COMP513, COMP514, and COMP515."
+        }
+      ]
+    },
+    "latency_ms": 4795,
+    "judge_usage": {
+      "calls": [
+        {
+          "purpose": "reference_grounding",
+          "input_tokens": 973,
+          "output_tokens": 494,
+          "total_tokens": 1467,
+          "model": "gpt-5.4-2026-03-05",
+          "system_fingerprint": null
+        }
+      ]
+    },
+    "stage": "reference_grounding",
+    "protocol": "phase2-evaluation-v3"
+  },
+  {
+    "answer_id": "a2a4d827-58e2-425e-a630-23baeccfe8e5",
+    "number": 1,
+    "status": "error",
+    "started_at": "2026-09-28T09:13:26.424626+00:00",
+    "error_type": "EvaluationCheckError",
+    "error": "Judge cited evidence outside the claim's permitted scope",
+    "diagnostic": {
+      "claim_index": 2,
+      "allowed_chunk_ids": [],
+      "purpose": "citation_completeness",
+      "verdicts": [
+        {
+          "claim_index": 0,
+          "verdict": "supported",
+          "evidence_chunk_ids": [
+            "ais-bit-programme::0002"
+          ],
+          "evidence_quotes": [
+            "The compulsory courses of the BIT are: COMP510 Fundamentals of Information\nSystems and Technology, COMP511 Information Technology Professional Skills,\nCOMP513 Fundamentals of Computer Programming, COMP514 Fundamentals of Computer\nDatabases, COMP515 Fundamentals of Networks and Security, BUSS502 Business\nEnvironment, MATH501 Essentials of Mathematics and Statistics, COMP602\nComputer System Testing, COMP609 Information System Security, COMP617\nRequirements Modelling, COMP621 Operating Systems, COMP701 Information\nTechnology Project Management, and COMP720 Information Technology Project\n(completed over two semesters)."
+          ],
+          "rationale": "The context explicitly includes a BIT compulsory-course list in the cited passage."
+        },
+        {
+          "claim_index": 1,
+          "verdict": "supported",
+          "evidence_chunk_ids": [
+            "ais-nzditts-programme::0000"
+          ],
+          "evidence_quotes": [
+            "The New Zealand Diploma in Information Technology Technical Support (NZDITTS)\nat Auckland Institute of Studies (AIS) is a Level 5 qualification of 120\ncredits, delivered over 12 months (three trimesters). No previous tertiary\nqualifications are necessary, and the diploma allows students to progress onto\nfurther IT qualifications."
+          ],
+          "rationale": "The NZDITTS passage gives programme details only and does not provide any NZDITTS course list, so the needed list is not included in the provided context."
+        },
+        {
+          "claim_index": 2,
+          "verdict": "supported",
+          "evidence_chunk_ids": [
+            "ais-bit-programme::0002",
+            "ais-nzditts-programme::0000"
+          ],
+          "evidence_quotes": [
+            "The compulsory courses of the BIT are: COMP510 Fundamentals of Information\nSystems and Technology, COMP511 Information Technology Professional Skills,\nCOMP513 Fundamentals of Computer Programming, COMP514 Fundamentals of Computer\nDatabases, COMP515 Fundamentals of Networks and Security, BUSS502 Business\nEnvironment, MATH501 Essentials of Mathematics and Statistics, COMP602\nComputer System Testing, COMP609 Information System Security, COMP617\nRequirements Modelling, COMP621 Operating Systems, COMP701 Information\nTechnology Project Management, and COMP720 Information Technology Project\n(completed over two semesters).",
+            "The New Zealand Diploma in Information Technology Technical Support (NZDITTS)\nat Auckland Institute of Studies (AIS) is a Level 5 qualification of 120\ncredits, delivered over 12 months (three trimesters). No previous tertiary\nqualifications are necessary, and the diploma allows students to progress onto\nfurther IT qualifications."
+          ],
+          "rationale": "The BIT compulsory list is present, but no NZDITTS course list is provided, so shared course codes and title mismatches cannot be determined reliably from the supplied context."
+        }
+      ]
+    },
+    "latency_ms": 5387,
+    "judge_usage": {
+      "calls": [
+        {
+          "purpose": "citation_completeness",
+          "input_tokens": 1446,
+          "output_tokens": 567,
+          "total_tokens": 2013,
+          "model": "gpt-5.4-2026-03-05",
+          "system_fingerprint": null
+        }
+      ]
+    },
+    "stage": "citation_completeness",
+    "protocol": "phase2-evaluation-v3"
+  },
+  {
+    "answer_id": "f53ee0fe-1c20-4c65-9537-f38983a33529",
+    "number": 1,
+    "status": "error",
+    "started_at": "2026-09-28T09:16:10.684410+00:00",
+    "error_type": "EvaluationCheckError",
+    "error": "Supported/partial/contradicted verdict requires verifiable evidence",
+    "diagnostic": {
+      "claim_index": 1,
+      "purpose": "retrieved_context_support",
+      "verdicts": [
+        {
+          "claim_index": 0,
+          "verdict": "supported",
+          "evidence_chunk_ids": [
+            "ais-withdrawal-refund-policy::0000"
+          ],
+          "evidence_quotes": [
+            "For programmes over three months"
+          ],
+          "rationale": "A 12-month programme is over three months."
+        },
+        {
+          "claim_index": 1,
+          "verdict": "supported",
+          "evidence_chunk_ids": [],
+          "evidence_quotes": [],
+          "rationale": "Six weeks before the start is earlier than one month before the start."
+        },
+        {
+          "claim_index": 2,
+          "verdict": "supported",
+          "evidence_chunk_ids": [
+            "ais-withdrawal-refund-policy::0000"
+          ],
+          "evidence_quotes": [
+            "International students\nwithdrawing earlier than one month prior to the start of the programme will be\nentitled to a refund less a deduction of NZ$500 or 10% of the fees paid,\nwhichever is the lesser."
+          ],
+          "rationale": "This exactly states the rule for international students in programmes over three months who withdraw earlier than one month before the start."
+        },
+        {
+          "claim_index": 3,
+          "verdict": "supported",
+          "evidence_chunk_ids": [],
+          "evidence_quotes": [],
+          "rationale": "The question states the student paid NZ$4,000."
+        },
+        {
+          "claim_index": 4,
+          "verdict": "supported",
+          "evidence_chunk_ids": [],
+          "evidence_quotes": [],
+          "rationale": "10% of NZ$4,000 is NZ$400."
+        },
+        {
+          "claim_index": 5,
+          "verdict": "supported",
+          "evidence_chunk_ids": [
+            "ais-withdrawal-refund-policy::0000"
+          ],
+          "evidence_quotes": [
+            "International students\nwithdrawing earlier than one month prior to the start of the programme will be\nentitled to a refund less a deduction of NZ$500 or 10% of the fees paid,\nwhichever is the lesser."
+          ],
+          "rationale": "Under the rule, the deduction is the lesser of NZ$500 and 10% of NZ$4,000. Since 10% is NZ$400, the deduction is NZ$400."
+        },
+        {
+          "claim_index": 6,
+          "verdict": "supported",
+          "evidence_chunk_ids": [
+            "ais-withdrawal-refund-policy::0000"
+          ],
+          "evidence_quotes": [
+            "International students\nwithdrawing earlier than one month prior to the start of the programme will be\nentitled to a refund less a deduction of NZ$500 or 10% of the fees paid,\nwhichever is the lesser."
+          ],
+          "rationale": "Refund = NZ$4,000 minus NZ$400 deduction = NZ$3,600."
+        }
+      ]
+    },
+    "latency_ms": 4887,
+    "judge_usage": {
+      "calls": [
+        {
+          "purpose": "retrieved_context_support",
+          "input_tokens": 1921,
+          "output_tokens": 511,
+          "total_tokens": 2432,
+          "model": "gpt-5.4-2026-03-05",
+          "system_fingerprint": null
+        }
+      ]
+    },
+    "stage": "retrieved_context_support",
+    "protocol": "phase2-evaluation-v3"
+  },
+  {
+    "answer_id": "4c1e8ec1-cdb1-430b-970b-4d8e18bc77a6",
+    "number": 1,
+    "status": "error",
+    "started_at": "2026-09-28T09:19:27.381301+00:00",
+    "error_type": "EvaluationCheckError",
+    "error": "Judge evidence quote does not occur in the cited passages",
+    "diagnostic": {
+      "claim_index": 0,
+      "claim": "The specific COMP901 thesis assignment document or policy version was not provided.",
+      "evidence_quote": "COMP901 IT Research Thesis - Assignment Brief (Trimester 2&3, 2026)",
+      "evidence_chunk_ids": [
+        "comp901-thesis-assignment::0005"
+      ],
+      "allowed_chunk_ids": [
+        "comp901-thesis-assignment::0005"
+      ],
+      "purpose": "reference_grounding",
+      "verdicts": [
+        {
+          "claim_index": 0,
+          "verdict": "contradicted",
+          "evidence_chunk_ids": [
+            "comp901-thesis-assignment::0005"
+          ],
+          "evidence_quotes": [
+            "COMP901 IT Research Thesis - Assignment Brief (Trimester 2&3, 2026)",
+            "Include a cover page that includes your name, student ID, course code and\ntitle, and assignment title."
+          ],
+          "rationale": "The passage does provide a specific COMP901 thesis assignment brief and states the cover-page requirements, so the claim that the specific document or policy version was not provided is contradicted."
+        }
+      ]
+    },
+    "latency_ms": 2070,
+    "judge_usage": {
+      "calls": [
+        {
+          "purpose": "reference_grounding",
+          "input_tokens": 650,
+          "output_tokens": 130,
+          "total_tokens": 780,
+          "model": "gpt-5.4-2026-03-05",
+          "system_fingerprint": null
+        }
+      ]
+    },
+    "stage": "reference_grounding",
+    "protocol": "phase2-evaluation-v3"
+  }
+]

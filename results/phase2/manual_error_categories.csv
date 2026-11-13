@@ -1,0 +1,10 @@
+evaluator,error_category,count
+xiaohui,citation_failure,3
+xiaohui,generation_failure,20
+xiaohui,inappropriate_clarification,10
+xiaohui,none,224
+xiaohui,over_answering,45
+xiaohui,over_refusal,3
+xiaohui,retrieval_failure,61
+xiaohui,undetermined,2
+xiaohui,verification_false_rejection,7

@@ -1,0 +1,1157 @@
+{
+  "status": "available",
+  "comparisons": [
+    {
+      "evaluator": "xiaohui",
+      "dimension": "overall",
+      "group": "all",
+      "metric": "reference_groundedness",
+      "n_questions": 72,
+      "n": 258,
+      "mae": 0.06510089910175958,
+      "bias_auto_minus_human": -0.0020025934539190378,
+      "spearman": 0.6253658313798087
+    },
+    {
+      "evaluator": "xiaohui",
+      "dimension": "overall",
+      "group": "all",
+      "metric": "retrieved_context_faithfulness",
+      "n_questions": 72,
+      "n": 244,
+      "mae": 0.05615567083008067,
+      "bias_auto_minus_human": -0.0015336453291699204,
+      "spearman": 0.3404418054373561
+    },
+    {
+      "evaluator": "xiaohui",
+      "dimension": "overall",
+      "group": "all",
+      "metric": "citation_precision",
+      "n_questions": 58,
+      "n": 211,
+      "mae": 0.04826225118483412,
+      "bias_auto_minus_human": -0.03135861453396525,
+      "spearman": 0.6058260192773374
+    },
+    {
+      "evaluator": "xiaohui",
+      "dimension": "overall",
+      "group": "all",
+      "metric": "citation_completeness",
+      "n_questions": 58,
+      "n": 211,
+      "mae": 0.1012262103362672,
+      "bias_auto_minus_human": -0.06057324561799444,
+      "spearman": 0.41265322091823736
+    },
+    {
+      "evaluator": "xiaohui",
+      "dimension": "overall",
+      "group": "all",
+      "metric": "hallucination_rate",
+      "n_questions": 72,
+      "n": 258,
+      "mae": 0.04453672468315491,
+      "bias_auto_minus_human": 0.0047065419589024235,
+      "spearman": 0.546942512344864
+    },
+    {
+      "evaluator": "xiaohui",
+      "dimension": "overall",
+      "group": "all",
+      "metric": "hallucinated",
+      "n_questions": 72,
+      "n": 258,
+      "mae": 0.09302325581395349,
+      "bias_auto_minus_human": 0.03875968992248062,
+      "raw_agreement": 0.9069767441860465,
+      "cohen_kappa": 0.5211136890951272,
+      "confusion": {
+        "human_0_auto_0": 218,
+        "human_0_auto_1": 17,
+        "human_1_auto_0": 7,
+        "human_1_auto_1": 16
+      }
+    },
+    {
+      "evaluator": "xiaohui",
+      "dimension": "overall",
+      "group": "all",
+      "metric": "action_appropriate",
+      "n_questions": 75,
+      "n": 375,
+      "mae": 0.021333333333333333,
+      "bias_auto_minus_human": -0.021333333333333333,
+      "raw_agreement": 0.9786666666666667,
+      "cohen_kappa": 0.9514280163201866,
+      "confusion": {
+        "human_0_auto_0": 118,
+        "human_0_auto_1": 0,
+        "human_1_auto_0": 8,
+        "human_1_auto_1": 249
+      }
+    },
+    {
+      "evaluator": "xiaohui",
+      "dimension": "overall",
+      "group": "all",
+      "metric": "appropriate_clarification",
+      "n_questions": 15,
+      "n": 75,
+      "mae": 0.02666666666666667,
+      "bias_auto_minus_human": -0.02666666666666667,
+      "raw_agreement": 0.9733333333333334,
+      "cohen_kappa": 0.9122807017543861,
+      "confusion": {
+        "human_0_auto_0": 60,
+        "human_0_auto_1": 0,
+        "human_1_auto_0": 2,
+        "human_1_auto_1": 13
+      }
+    },
+    {
+      "evaluator": "xiaohui",
+      "dimension": "condition",
+      "group": "C0",
+      "metric": "reference_groundedness",
+      "n_questions": 14,
+      "n": 14,
+      "mae": 0.23293650793650794,
+      "bias_auto_minus_human": 0.0884920634920635,
+      "spearman": 0.6365538827671715
+    },
+    {
+      "evaluator": "xiaohui",
+      "dimension": "condition",
+      "group": "C0",
+      "metric": "retrieved_context_faithfulness",
+      "n_questions": 0,
+      "n": 0
+    },
+    {
+      "evaluator": "xiaohui",
+      "dimension": "condition",
+      "group": "C0",
+      "metric": "citation_precision",
+      "n_questions": 0,
+      "n": 0
+    },
+    {
+      "evaluator": "xiaohui",
+      "dimension": "condition",
+      "group": "C0",
+      "metric": "citation_completeness",
+      "n_questions": 0,
+      "n": 0
+    },
+    {
+      "evaluator": "xiaohui",
+      "dimension": "condition",
+      "group": "C0",
+      "metric": "hallucination_rate",
+      "n_questions": 14,
+      "n": 14,
+      "mae": 0.24325396825396825,
+      "bias_auto_minus_human": -0.07817460317460319,
+      "spearman": 0.43914852886763667
+    },
+    {
+      "evaluator": "xiaohui",
+      "dimension": "condition",
+      "group": "C0",
+      "metric": "hallucinated",
+      "n_questions": 14,
+      "n": 14,
+      "mae": 0.35714285714285715,
+      "bias_auto_minus_human": 0.07142857142857142,
+      "raw_agreement": 0.6428571428571429,
+      "cohen_kappa": 0.2857142857142858,
+      "confusion": {
+        "human_0_auto_0": 4,
+        "human_0_auto_1": 3,
+        "human_1_auto_0": 2,
+        "human_1_auto_1": 5
+      }
+    },
+    {
+      "evaluator": "xiaohui",
+      "dimension": "condition",
+      "group": "C0",
+      "metric": "action_appropriate",
+      "n_questions": 75,
+      "n": 75,
+      "mae": 0.013333333333333334,
+      "bias_auto_minus_human": -0.013333333333333334,
+      "raw_agreement": 0.9866666666666667,
+      "cohen_kappa": 0.9653579676674365,
+      "confusion": {
+        "human_0_auto_0": 55,
+        "human_0_auto_1": 0,
+        "human_1_auto_0": 1,
+        "human_1_auto_1": 19
+      }
+    },
+    {
+      "evaluator": "xiaohui",
+      "dimension": "condition",
+      "group": "C0",
+      "metric": "appropriate_clarification",
+      "n_questions": 15,
+      "n": 15,
+      "mae": 0.06666666666666667,
+      "bias_auto_minus_human": -0.06666666666666667,
+      "raw_agreement": 0.9333333333333333,
+      "cohen_kappa": 0.0,
+      "confusion": {
+        "human_0_auto_0": 14,
+        "human_0_auto_1": 0,
+        "human_1_auto_0": 1,
+        "human_1_auto_1": 0
+      }
+    },
+    {
+      "evaluator": "xiaohui",
+      "dimension": "condition",
+      "group": "C1",
+      "metric": "reference_groundedness",
+      "n_questions": 67,
+      "n": 67,
+      "mae": 0.0656716368159204,
+      "bias_auto_minus_human": -0.021890562189054726,
+      "spearman": 0.5358113502673365
+    },
+    {
+      "evaluator": "xiaohui",
+      "dimension": "condition",
+      "group": "C1",
+      "metric": "retrieved_context_faithfulness",
+      "n_questions": 67,
+      "n": 67,
+      "mae": 0.0539504806917792,
+      "bias_auto_minus_human": -0.010583999763089316,
+      "spearman": 0.5151232765702479
+    },
+    {
+      "evaluator": "xiaohui",
+      "dimension": "condition",
+      "group": "C1",
+      "metric": "citation_precision",
+      "n_questions": 56,
+      "n": 56,
+      "mae": 0.03392858333333333,
+      "bias_auto_minus_human": -0.03392858333333333,
+      "spearman": 0.8046170106231225
+    },
+    {
+      "evaluator": "xiaohui",
+      "dimension": "condition",
+      "group": "C1",
+      "metric": "citation_completeness",
+      "n_questions": 56,
+      "n": 56,
+      "mae": 0.12273243225623584,
+      "bias_auto_minus_human": -0.06876417828798187,
+      "spearman": 0.35421956935771504
+    },
+    {
+      "evaluator": "xiaohui",
+      "dimension": "condition",
+      "group": "C1",
+      "metric": "hallucination_rate",
+      "n_questions": 67,
+      "n": 67,
+      "mae": 0.03211324496564795,
+      "bias_auto_minus_human": 0.020670468846244964,
+      "spearman": 0.548120916083568
+    },
+    {
+      "evaluator": "xiaohui",
+      "dimension": "condition",
+      "group": "C1",
+      "metric": "hallucinated",
+      "n_questions": 67,
+      "n": 67,
+      "mae": 0.08955223880597014,
+      "bias_auto_minus_human": 0.05970149253731343,
+      "raw_agreement": 0.9104477611940298,
+      "cohen_kappa": 0.5259433962264152,
+      "confusion": {
+        "human_0_auto_0": 57,
+        "human_0_auto_1": 5,
+        "human_1_auto_0": 1,
+        "human_1_auto_1": 4
+      }
+    },
+    {
+      "evaluator": "xiaohui",
+      "dimension": "condition",
+      "group": "C1",
+      "metric": "action_appropriate",
+      "n_questions": 75,
+      "n": 75,
+      "mae": 0.08,
+      "bias_auto_minus_human": -0.08,
+      "raw_agreement": 0.92,
+      "cohen_kappa": 0.7738693467336685,
+      "confusion": {
+        "human_0_auto_0": 14,
+        "human_0_auto_1": 0,
+        "human_1_auto_0": 6,
+        "human_1_auto_1": 55
+      }
+    },
+    {
+      "evaluator": "xiaohui",
+      "dimension": "condition",
+      "group": "C1",
+      "metric": "appropriate_clarification",
+      "n_questions": 15,
+      "n": 15,
+      "mae": 0.0,
+      "bias_auto_minus_human": 0.0,
+      "raw_agreement": 1.0,
+      "cohen_kappa": 1.0,
+      "confusion": {
+        "human_0_auto_0": 12,
+        "human_0_auto_1": 0,
+        "human_1_auto_0": 0,
+        "human_1_auto_1": 3
+      }
+    },
+    {
+      "evaluator": "xiaohui",
+      "dimension": "condition",
+      "group": "C2",
+      "metric": "reference_groundedness",
+      "n_questions": 69,
+      "n": 69,
+      "mae": 0.04047619530710835,
+      "bias_auto_minus_human": 0.009765340924775706,
+      "spearman": 0.623376698443917
+    },
+    {
+      "evaluator": "xiaohui",
+      "dimension": "condition",
+      "group": "C2",
+      "metric": "retrieved_context_faithfulness",
+      "n_questions": 69,
+      "n": 69,
+      "mae": 0.0455486590752243,
+      "bias_auto_minus_human": 0.007591427881297445,
+      "spearman": 0.2851788123573965
+    },
+    {
+      "evaluator": "xiaohui",
+      "dimension": "condition",
+      "group": "C2",
+      "metric": "citation_precision",
+      "n_questions": 54,
+      "n": 54,
+      "mae": 0.06635803703703703,
+      "bias_auto_minus_human": -0.04475308641975309,
+      "spearman": 0.46219204375745615
+    },
+    {
+      "evaluator": "xiaohui",
+      "dimension": "condition",
+      "group": "C2",
+      "metric": "citation_completeness",
+      "n_questions": 54,
+      "n": 54,
+      "mae": 0.06538801322751323,
+      "bias_auto_minus_human": -0.038227531746031745,
+      "spearman": 0.573500030816353
+    },
+    {
+      "evaluator": "xiaohui",
+      "dimension": "condition",
+      "group": "C2",
+      "metric": "hallucination_rate",
+      "n_questions": 69,
+      "n": 69,
+      "mae": 0.02453415182884748,
+      "bias_auto_minus_human": 0.0023119489302967566,
+      "spearman": 0.428987432897805
+    },
+    {
+      "evaluator": "xiaohui",
+      "dimension": "condition",
+      "group": "C2",
+      "metric": "hallucinated",
+      "n_questions": 69,
+      "n": 69,
+      "mae": 0.07246376811594203,
+      "bias_auto_minus_human": 0.014492753623188406,
+      "raw_agreement": 0.927536231884058,
+      "cohen_kappa": 0.4061962134251288,
+      "confusion": {
+        "human_0_auto_0": 62,
+        "human_0_auto_1": 3,
+        "human_1_auto_0": 2,
+        "human_1_auto_1": 2
+      }
+    },
+    {
+      "evaluator": "xiaohui",
+      "dimension": "condition",
+      "group": "C2",
+      "metric": "action_appropriate",
+      "n_questions": 75,
+      "n": 75,
+      "mae": 0.0,
+      "bias_auto_minus_human": 0.0,
+      "raw_agreement": 1.0,
+      "cohen_kappa": 1.0,
+      "confusion": {
+        "human_0_auto_0": 14,
+        "human_0_auto_1": 0,
+        "human_1_auto_0": 0,
+        "human_1_auto_1": 61
+      }
+    },
+    {
+      "evaluator": "xiaohui",
+      "dimension": "condition",
+      "group": "C2",
+      "metric": "appropriate_clarification",
+      "n_questions": 15,
+      "n": 15,
+      "mae": 0.0,
+      "bias_auto_minus_human": 0.0,
+      "raw_agreement": 1.0,
+      "cohen_kappa": 1.0,
+      "confusion": {
+        "human_0_auto_0": 11,
+        "human_0_auto_1": 0,
+        "human_1_auto_0": 0,
+        "human_1_auto_1": 4
+      }
+    },
+    {
+      "evaluator": "xiaohui",
+      "dimension": "condition",
+      "group": "C3",
+      "metric": "reference_groundedness",
+      "n_questions": 51,
+      "n": 51,
+      "mae": 0.06549952661064426,
+      "bias_auto_minus_human": -0.025350159663865553,
+      "spearman": 0.41952895549474944
+    },
+    {
+      "evaluator": "xiaohui",
+      "dimension": "condition",
+      "group": "C3",
+      "metric": "retrieved_context_faithfulness",
+      "n_questions": 51,
+      "n": 51,
+      "mae": 0.06666666666666668,
+      "bias_auto_minus_human": -0.026143803921568627,
+      "spearman": 0.0782244012143357
+    },
+    {
+      "evaluator": "xiaohui",
+      "dimension": "condition",
+      "group": "C3",
+      "metric": "citation_precision",
+      "n_questions": 48,
+      "n": 48,
+      "mae": 0.03125000694444444,
+      "bias_auto_minus_human": -0.03125000694444444,
+      "spearman": 0.73645051773884
+    },
+    {
+      "evaluator": "xiaohui",
+      "dimension": "condition",
+      "group": "C3",
+      "metric": "citation_completeness",
+      "n_questions": 48,
+      "n": 48,
+      "mae": 0.10532407407407407,
+      "bias_auto_minus_human": -0.08310186574074074,
+      "spearman": 0.40585917578469294
+    },
+    {
+      "evaluator": "xiaohui",
+      "dimension": "condition",
+      "group": "C3",
+      "metric": "hallucination_rate",
+      "n_questions": 51,
+      "n": 51,
+      "mae": 0.033333326797385626,
+      "bias_auto_minus_human": 0.020261444444444443,
+      "spearman": 0.30635962569883074
+    },
+    {
+      "evaluator": "xiaohui",
+      "dimension": "condition",
+      "group": "C3",
+      "metric": "hallucinated",
+      "n_questions": 51,
+      "n": 51,
+      "mae": 0.09803921568627451,
+      "bias_auto_minus_human": 0.058823529411764705,
+      "raw_agreement": 0.9019607843137255,
+      "cohen_kappa": 0.24332344213649884,
+      "confusion": {
+        "human_0_auto_0": 45,
+        "human_0_auto_1": 4,
+        "human_1_auto_0": 1,
+        "human_1_auto_1": 1
+      }
+    },
+    {
+      "evaluator": "xiaohui",
+      "dimension": "condition",
+      "group": "C3",
+      "metric": "action_appropriate",
+      "n_questions": 75,
+      "n": 75,
+      "mae": 0.0,
+      "bias_auto_minus_human": 0.0,
+      "raw_agreement": 1.0,
+      "cohen_kappa": 1.0,
+      "confusion": {
+        "human_0_auto_0": 20,
+        "human_0_auto_1": 0,
+        "human_1_auto_0": 0,
+        "human_1_auto_1": 55
+      }
+    },
+    {
+      "evaluator": "xiaohui",
+      "dimension": "condition",
+      "group": "C3",
+      "metric": "appropriate_clarification",
+      "n_questions": 15,
+      "n": 15,
+      "mae": 0.0,
+      "bias_auto_minus_human": 0.0,
+      "raw_agreement": 1.0,
+      "cohen_kappa": 1.0,
+      "confusion": {
+        "human_0_auto_0": 12,
+        "human_0_auto_1": 0,
+        "human_1_auto_0": 0,
+        "human_1_auto_1": 3
+      }
+    },
+    {
+      "evaluator": "xiaohui",
+      "dimension": "condition",
+      "group": "C4",
+      "metric": "reference_groundedness",
+      "n_questions": 57,
+      "n": 57,
+      "mae": 0.05265943609022556,
+      "bias_auto_minus_human": 0.005792268170426066,
+      "spearman": 0.7514522610536568
+    },
+    {
+      "evaluator": "xiaohui",
+      "dimension": "condition",
+      "group": "C4",
+      "metric": "retrieved_context_faithfulness",
+      "n_questions": 57,
+      "n": 57,
+      "mae": 0.062183228070175435,
+      "bias_auto_minus_human": 0.020077964912280703,
+      "spearman": 0.3878935752815581
+    },
+    {
+      "evaluator": "xiaohui",
+      "dimension": "condition",
+      "group": "C4",
+      "metric": "citation_precision",
+      "n_questions": 53,
+      "n": 53,
+      "mae": 0.06037735849056604,
+      "bias_auto_minus_human": -0.01509433962264151,
+      "spearman": 0.4696616451801925
+    },
+    {
+      "evaluator": "xiaohui",
+      "dimension": "condition",
+      "group": "C4",
+      "metric": "citation_completeness",
+      "n_questions": 53,
+      "n": 53,
+      "mae": 0.11130577178796047,
+      "bias_auto_minus_human": -0.05428272776280323,
+      "spearman": 0.3381595971247244
+    },
+    {
+      "evaluator": "xiaohui",
+      "dimension": "condition",
+      "group": "C4",
+      "metric": "hallucination_rate",
+      "n_questions": 57,
+      "n": 57,
+      "mae": 0.04456975187969924,
+      "bias_auto_minus_human": -0.0047201278195488725,
+      "spearman": 0.6874323522113794
+    },
+    {
+      "evaluator": "xiaohui",
+      "dimension": "condition",
+      "group": "C4",
+      "metric": "hallucinated",
+      "n_questions": 57,
+      "n": 57,
+      "mae": 0.05263157894736842,
+      "bias_auto_minus_human": 0.017543859649122806,
+      "raw_agreement": 0.9473684210526315,
+      "cohen_kappa": 0.6984126984126982,
+      "confusion": {
+        "human_0_auto_0": 50,
+        "human_0_auto_1": 2,
+        "human_1_auto_0": 1,
+        "human_1_auto_1": 4
+      }
+    },
+    {
+      "evaluator": "xiaohui",
+      "dimension": "condition",
+      "group": "C4",
+      "metric": "action_appropriate",
+      "n_questions": 75,
+      "n": 75,
+      "mae": 0.013333333333333334,
+      "bias_auto_minus_human": -0.013333333333333334,
+      "raw_agreement": 0.9866666666666667,
+      "cohen_kappa": 0.9593495934959351,
+      "confusion": {
+        "human_0_auto_0": 15,
+        "human_0_auto_1": 0,
+        "human_1_auto_0": 1,
+        "human_1_auto_1": 59
+      }
+    },
+    {
+      "evaluator": "xiaohui",
+      "dimension": "condition",
+      "group": "C4",
+      "metric": "appropriate_clarification",
+      "n_questions": 15,
+      "n": 15,
+      "mae": 0.06666666666666667,
+      "bias_auto_minus_human": -0.06666666666666667,
+      "raw_agreement": 0.9333333333333333,
+      "cohen_kappa": 0.8148148148148149,
+      "confusion": {
+        "human_0_auto_0": 11,
+        "human_0_auto_1": 0,
+        "human_1_auto_0": 1,
+        "human_1_auto_1": 3
+      }
+    },
+    {
+      "evaluator": "xiaohui",
+      "dimension": "qtype",
+      "group": "ambiguous",
+      "metric": "reference_groundedness",
+      "n_questions": 15,
+      "n": 62,
+      "mae": 0.15404506426011264,
+      "bias_auto_minus_human": 0.08684072017409113,
+      "spearman": 0.4941043028408383
+    },
+    {
+      "evaluator": "xiaohui",
+      "dimension": "qtype",
+      "group": "ambiguous",
+      "metric": "retrieved_context_faithfulness",
+      "n_questions": 15,
+      "n": 56,
+      "mae": 0.13035713095238097,
+      "bias_auto_minus_human": 0.05892851190476191,
+      "spearman": 0.22351770229415815
+    },
+    {
+      "evaluator": "xiaohui",
+      "dimension": "qtype",
+      "group": "ambiguous",
+      "metric": "citation_precision",
+      "n_questions": 12,
+      "n": 43,
+      "mae": 0.04844962015503875,
+      "bias_auto_minus_human": -0.03294572868217054,
+      "spearman": 0.7544087173372831
+    },
+    {
+      "evaluator": "xiaohui",
+      "dimension": "qtype",
+      "group": "ambiguous",
+      "metric": "citation_completeness",
+      "n_questions": 12,
+      "n": 43,
+      "mae": 0.13049095607235142,
+      "bias_auto_minus_human": 0.020671772609819113,
+      "spearman": 0.4516859464906674
+    },
+    {
+      "evaluator": "xiaohui",
+      "dimension": "qtype",
+      "group": "ambiguous",
+      "metric": "hallucination_rate",
+      "n_questions": 15,
+      "n": 62,
+      "mae": 0.09568609703020992,
+      "bias_auto_minus_human": -0.003929824628776242,
+      "spearman": 0.2809777280417058
+    },
+    {
+      "evaluator": "xiaohui",
+      "dimension": "qtype",
+      "group": "ambiguous",
+      "metric": "hallucinated",
+      "n_questions": 15,
+      "n": 62,
+      "mae": 0.24193548387096775,
+      "bias_auto_minus_human": 0.04838709677419355,
+      "raw_agreement": 0.7580645161290323,
+      "cohen_kappa": 0.25120772946859876,
+      "confusion": {
+        "human_0_auto_0": 42,
+        "human_0_auto_1": 9,
+        "human_1_auto_0": 6,
+        "human_1_auto_1": 5
+      }
+    },
+    {
+      "evaluator": "xiaohui",
+      "dimension": "qtype",
+      "group": "ambiguous",
+      "metric": "action_appropriate",
+      "n_questions": 15,
+      "n": 75,
+      "mae": 0.02666666666666667,
+      "bias_auto_minus_human": -0.02666666666666667,
+      "raw_agreement": 0.9733333333333334,
+      "cohen_kappa": 0.9122807017543861,
+      "confusion": {
+        "human_0_auto_0": 60,
+        "human_0_auto_1": 0,
+        "human_1_auto_0": 2,
+        "human_1_auto_1": 13
+      }
+    },
+    {
+      "evaluator": "xiaohui",
+      "dimension": "qtype",
+      "group": "ambiguous",
+      "metric": "appropriate_clarification",
+      "n_questions": 15,
+      "n": 75,
+      "mae": 0.02666666666666667,
+      "bias_auto_minus_human": -0.02666666666666667,
+      "raw_agreement": 0.9733333333333334,
+      "cohen_kappa": 0.9122807017543861,
+      "confusion": {
+        "human_0_auto_0": 60,
+        "human_0_auto_1": 0,
+        "human_1_auto_0": 2,
+        "human_1_auto_1": 13
+      }
+    },
+    {
+      "evaluator": "xiaohui",
+      "dimension": "qtype",
+      "group": "conditional",
+      "metric": "reference_groundedness",
+      "n_questions": 15,
+      "n": 62,
+      "mae": 0.05537634408602151,
+      "bias_auto_minus_human": -0.04569892473118279,
+      "spearman": 0.697146433187702
+    },
+    {
+      "evaluator": "xiaohui",
+      "dimension": "qtype",
+      "group": "conditional",
+      "metric": "retrieved_context_faithfulness",
+      "n_questions": 15,
+      "n": 58,
+      "mae": 0.026888341543513963,
+      "bias_auto_minus_human": -0.025164203612479476,
+      "spearman": 0.37425252370410034
+    },
+    {
+      "evaluator": "xiaohui",
+      "dimension": "qtype",
+      "group": "conditional",
+      "metric": "citation_precision",
+      "n_questions": 15,
+      "n": 56,
+      "mae": 0.029761916666666666,
+      "bias_auto_minus_human": -0.029761916666666666,
+      "spearman": 0.5323834958326878
+    },
+    {
+      "evaluator": "xiaohui",
+      "dimension": "qtype",
+      "group": "conditional",
+      "metric": "citation_completeness",
+      "n_questions": 15,
+      "n": 56,
+      "mae": 0.13823696145124717,
+      "bias_auto_minus_human": -0.1364512471655329,
+      "spearman": 0.3196139353344585
+    },
+    {
+      "evaluator": "xiaohui",
+      "dimension": "qtype",
+      "group": "conditional",
+      "metric": "hallucination_rate",
+      "n_questions": 15,
+      "n": 62,
+      "mae": 0.03817204301075268,
+      "bias_auto_minus_human": 0.028494623655913976,
+      "spearman": 0.7909768114162815
+    },
+    {
+      "evaluator": "xiaohui",
+      "dimension": "qtype",
+      "group": "conditional",
+      "metric": "hallucinated",
+      "n_questions": 15,
+      "n": 62,
+      "mae": 0.06451612903225806,
+      "bias_auto_minus_human": 0.06451612903225806,
+      "raw_agreement": 0.9354838709677419,
+      "cohen_kappa": 0.7155963302752291,
+      "confusion": {
+        "human_0_auto_0": 52,
+        "human_0_auto_1": 4,
+        "human_1_auto_0": 0,
+        "human_1_auto_1": 6
+      }
+    },
+    {
+      "evaluator": "xiaohui",
+      "dimension": "qtype",
+      "group": "conditional",
+      "metric": "action_appropriate",
+      "n_questions": 15,
+      "n": 75,
+      "mae": 0.013333333333333334,
+      "bias_auto_minus_human": -0.013333333333333334,
+      "raw_agreement": 0.9866666666666667,
+      "cohen_kappa": 0.9641319942611192,
+      "confusion": {
+        "human_0_auto_0": 18,
+        "human_0_auto_1": 0,
+        "human_1_auto_0": 1,
+        "human_1_auto_1": 56
+      }
+    },
+    {
+      "evaluator": "xiaohui",
+      "dimension": "qtype",
+      "group": "conditional",
+      "metric": "appropriate_clarification",
+      "n_questions": 0,
+      "n": 0
+    },
+    {
+      "evaluator": "xiaohui",
+      "dimension": "qtype",
+      "group": "multi_doc",
+      "metric": "reference_groundedness",
+      "n_questions": 15,
+      "n": 53,
+      "mae": 0.03869421772985923,
+      "bias_auto_minus_human": -0.034082062593590895,
+      "spearman": 0.6456133729218974
+    },
+    {
+      "evaluator": "xiaohui",
+      "dimension": "qtype",
+      "group": "multi_doc",
+      "metric": "retrieved_context_faithfulness",
+      "n_questions": 15,
+      "n": 52,
+      "mae": 0.05306013858363859,
+      "bias_auto_minus_human": -0.03137209584859585,
+      "spearman": 0.3952054531153329
+    },
+    {
+      "evaluator": "xiaohui",
+      "dimension": "qtype",
+      "group": "multi_doc",
+      "metric": "citation_precision",
+      "n_questions": 15,
+      "n": 52,
+      "mae": 0.10448719230769231,
+      "bias_auto_minus_human": -0.0871795,
+      "spearman": 0.5065612527797433
+    },
+    {
+      "evaluator": "xiaohui",
+      "dimension": "qtype",
+      "group": "multi_doc",
+      "metric": "citation_completeness",
+      "n_questions": 15,
+      "n": 52,
+      "mae": 0.09307082234432235,
+      "bias_auto_minus_human": -0.074267394993895,
+      "spearman": 0.3137542801518656
+    },
+    {
+      "evaluator": "xiaohui",
+      "dimension": "qtype",
+      "group": "multi_doc",
+      "metric": "hallucination_rate",
+      "n_questions": 15,
+      "n": 53,
+      "mae": 0.04312669302186283,
+      "bias_auto_minus_human": 0.005390843965259061,
+      "spearman": 0.40820600835592186
+    },
+    {
+      "evaluator": "xiaohui",
+      "dimension": "qtype",
+      "group": "multi_doc",
+      "metric": "hallucinated",
+      "n_questions": 15,
+      "n": 53,
+      "mae": 0.09433962264150944,
+      "bias_auto_minus_human": 0.05660377358490566,
+      "raw_agreement": 0.9056603773584906,
+      "cohen_kappa": 0.39909297052154236,
+      "confusion": {
+        "human_0_auto_0": 46,
+        "human_0_auto_1": 4,
+        "human_1_auto_0": 1,
+        "human_1_auto_1": 2
+      }
+    },
+    {
+      "evaluator": "xiaohui",
+      "dimension": "qtype",
+      "group": "multi_doc",
+      "metric": "action_appropriate",
+      "n_questions": 15,
+      "n": 75,
+      "mae": 0.06666666666666667,
+      "bias_auto_minus_human": -0.06666666666666667,
+      "raw_agreement": 0.9333333333333333,
+      "cohen_kappa": 0.8521876231769807,
+      "confusion": {
+        "human_0_auto_0": 23,
+        "human_0_auto_1": 0,
+        "human_1_auto_0": 5,
+        "human_1_auto_1": 47
+      }
+    },
+    {
+      "evaluator": "xiaohui",
+      "dimension": "qtype",
+      "group": "multi_doc",
+      "metric": "appropriate_clarification",
+      "n_questions": 0,
+      "n": 0
+    },
+    {
+      "evaluator": "xiaohui",
+      "dimension": "qtype",
+      "group": "single_doc",
+      "metric": "reference_groundedness",
+      "n_questions": 15,
+      "n": 62,
+      "mae": 0.024372759856630823,
+      "bias_auto_minus_human": -0.024372759856630823,
+      "spearman": 0.7009723491573199
+    },
+    {
+      "evaluator": "xiaohui",
+      "dimension": "qtype",
+      "group": "single_doc",
+      "metric": "retrieved_context_faithfulness",
+      "n_questions": 15,
+      "n": 59,
+      "mae": 0.02259887005649718,
+      "bias_auto_minus_human": -0.02259887005649718,
+      "spearman": null
+    },
+    {
+      "evaluator": "xiaohui",
+      "dimension": "qtype",
+      "group": "single_doc",
+      "metric": "citation_precision",
+      "n_questions": 15,
+      "n": 59,
+      "mae": 0.0,
+      "bias_auto_minus_human": 0.0,
+      "spearman": null
+    },
+    {
+      "evaluator": "xiaohui",
+      "dimension": "qtype",
+      "group": "single_doc",
+      "metric": "citation_completeness",
+      "n_questions": 15,
+      "n": 59,
+      "mae": 0.04519774011299436,
+      "bias_auto_minus_human": -0.04519774011299436,
+      "spearman": 0.7020019818601715
+    },
+    {
+      "evaluator": "xiaohui",
+      "dimension": "qtype",
+      "group": "single_doc",
+      "metric": "hallucination_rate",
+      "n_questions": 15,
+      "n": 62,
+      "mae": 0.0025089605734767025,
+      "bias_auto_minus_human": 0.0025089605734767025,
+      "spearman": 1.0
+    },
+    {
+      "evaluator": "xiaohui",
+      "dimension": "qtype",
+      "group": "single_doc",
+      "metric": "hallucinated",
+      "n_questions": 15,
+      "n": 62,
+      "mae": 0.0,
+      "bias_auto_minus_human": 0.0,
+      "raw_agreement": 1.0,
+      "cohen_kappa": 1.0,
+      "confusion": {
+        "human_0_auto_0": 60,
+        "human_0_auto_1": 0,
+        "human_1_auto_0": 0,
+        "human_1_auto_1": 2
+      }
+    },
+    {
+      "evaluator": "xiaohui",
+      "dimension": "qtype",
+      "group": "single_doc",
+      "metric": "action_appropriate",
+      "n_questions": 15,
+      "n": 75,
+      "mae": 0.0,
+      "bias_auto_minus_human": 0.0,
+      "raw_agreement": 1.0,
+      "cohen_kappa": 1.0,
+      "confusion": {
+        "human_0_auto_0": 13,
+        "human_0_auto_1": 0,
+        "human_1_auto_0": 0,
+        "human_1_auto_1": 62
+      }
+    },
+    {
+      "evaluator": "xiaohui",
+      "dimension": "qtype",
+      "group": "single_doc",
+      "metric": "appropriate_clarification",
+      "n_questions": 0,
+      "n": 0
+    },
+    {
+      "evaluator": "xiaohui",
+      "dimension": "qtype",
+      "group": "unanswerable",
+      "metric": "reference_groundedness",
+      "n_questions": 12,
+      "n": 19,
+      "mae": 0.013157894736842105,
+      "bias_auto_minus_human": 0.013157894736842105,
+      "spearman": 0.9999999999999998
+    },
+    {
+      "evaluator": "xiaohui",
+      "dimension": "qtype",
+      "group": "unanswerable",
+      "metric": "retrieved_context_faithfulness",
+      "n_questions": 12,
+      "n": 19,
+      "mae": 0.039473684210526314,
+      "bias_auto_minus_human": 0.039473684210526314,
+      "spearman": 0.9999999999999998
+    },
+    {
+      "evaluator": "xiaohui",
+      "dimension": "qtype",
+      "group": "unanswerable",
+      "metric": "citation_precision",
+      "n_questions": 1,
+      "n": 1,
+      "mae": 1.0,
+      "bias_auto_minus_human": 1.0,
+      "spearman": null
+    },
+    {
+      "evaluator": "xiaohui",
+      "dimension": "qtype",
+      "group": "unanswerable",
+      "metric": "citation_completeness",
+      "n_questions": 1,
+      "n": 1,
+      "mae": 0.5,
+      "bias_auto_minus_human": 0.5,
+      "spearman": null
+    },
+    {
+      "evaluator": "xiaohui",
+      "dimension": "qtype",
+      "group": "unanswerable",
+      "metric": "hallucination_rate",
+      "n_questions": 12,
+      "n": 19,
+      "mae": 0.039473684210526314,
+      "bias_auto_minus_human": -0.039473684210526314,
+      "spearman": 0.9999999999999998
+    },
+    {
+      "evaluator": "xiaohui",
+      "dimension": "qtype",
+      "group": "unanswerable",
+      "metric": "hallucinated",
+      "n_questions": 12,
+      "n": 19,
+      "mae": 0.0,
+      "bias_auto_minus_human": 0.0,
+      "raw_agreement": 1.0,
+      "cohen_kappa": 1.0,
+      "confusion": {
+        "human_0_auto_0": 18,
+        "human_0_auto_1": 0,
+        "human_1_auto_0": 0,
+        "human_1_auto_1": 1
+      }
+    },
+    {
+      "evaluator": "xiaohui",
+      "dimension": "qtype",
+      "group": "unanswerable",
+      "metric": "action_appropriate",
+      "n_questions": 15,
+      "n": 75,
+      "mae": 0.0,
+      "bias_auto_minus_human": 0.0,
+      "raw_agreement": 1.0,
+      "cohen_kappa": 1.0,
+      "confusion": {
+        "human_0_auto_0": 4,
+        "human_0_auto_1": 0,
+        "human_1_auto_0": 0,
+        "human_1_auto_1": 71
+      }
+    },
+    {
+      "evaluator": "xiaohui",
+      "dimension": "qtype",
+      "group": "unanswerable",
+      "metric": "appropriate_clarification",
+      "n_questions": 0,
+      "n": 0
+    }
+  ],
+  "n_evaluators": 1,
+  "note": "Descriptive associations only; conditions share questions, so no independent-row correlation p-values. Single-rater results are not inter-rater reliability. Optional ordinal rubric is not silently equated with a continuous metric."
+}
